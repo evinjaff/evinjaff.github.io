@@ -8,7 +8,7 @@
             loop3 = setInterval(function()
             {
               "use strict";
-                if(i > 40)
+                if(i > 100)
                 {
                     clearInterval(loop3);
                     selector3.textContent = 4;
@@ -21,7 +21,7 @@
             loop2 = setInterval(function()
             {
               "use strict";
-                if(i > 80)
+                if(i > 150)
                 {
                     clearInterval(loop2);
                     selector2.textContent = 0;
@@ -34,7 +34,7 @@
             loop1 = setInterval(function()
             {
               "use strict";
-                if(i > 100)
+                if(i > 200)
                 {
                     clearInterval(loop1);
                     selector1.textContent = 4;
