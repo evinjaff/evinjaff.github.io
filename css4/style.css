@@ -3,7 +3,7 @@
 {
   font-family: 'PT Sans Caption', sans-serif, 'arial', 'Times New Roman';
 }
-{{ site.baseurl }}sub/page/
+{{ site.baseurl }}sub/page/page
 /* Error Page */
 .topnav {
     background-color: #343a40;
