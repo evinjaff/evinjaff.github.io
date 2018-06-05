@@ -1,0 +1,51 @@
+<div class="topnav page-top">
+  <a class="active" href="https://evinjaff.github.io">Home</a>
+  <a href="https://evinjaff.github.io/NFC">NFC</a>
+  <a href="https://evinjaff.github.io/lasercutting">Laser Cutting</a>
+  <a href="https://evinjaff.github.io/woodworking">Woodworking</a>
+  <a href="https://evinjaff.github.io/wearables">Wearables</a>
+  <a href="https://evinjaff.github.io/robotics">Robotics</a>
+  <a href="https://evinjaff.github.io/propmaking">Propmaking</a>
+  <a href="https://evinjaff.github.io/forefront">Forefront</a>
+  <a href="https://evinjaff.github.io/wearables">Wearables</a>
+  <a href="https://evinjaff.github.io/coding">Coding</a>
+  <a href="https://evinjaff.github.io/starkomon">Starkomon</a>
+</div>
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+    
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('This area is restricted, Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "sinkbike") {
+alert('You Got it Right!');
+window.open('/starkomon/granted');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<CENTER>
+<FORM>
+	<h1>Access Restricted</h1>
+<input type="button" value="Click Here to enter Protected Area" onClick="passWord()">
+</FORM>
+</CENTER>
