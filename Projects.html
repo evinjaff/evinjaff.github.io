@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+    <link rel="stylesheet" href="./support/lumen-boostrap.min.css">
+    <script src="./support/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="./support/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./support/home.css">
+    <link rel="stylesheet" href="./support/styles.css">
+    <link rel="stylesheet" href="./support/navbar.css">
+    <link rel="stylesheet" href="./support/projects.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="site-title">
+          <h1>EVIN JAFF</h1>
+        </div>
+
+      <hr>
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#">Brand</a> -->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li ><a href="index.html">Home</a></li>
+            <li ><a href="Work_Experience.html">Experience</a></li>
+            <li class="active"><a href="Projects.html">Projects</a></li>
+            <li ><a href="Skills.html">Skills</a></li>
+
+          </ul>
+
+          <ul class="nav navbar-nav nav-float-right">
+            <li><a href="https://evinjaff.github.io/papers/evinjaff-resume.pdf">Download Resume</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid content">
+      <div class="row projects">
+  <div class="col-sm-9">
+
+    <h1><a name="IndependentStudy"></a>Strategy Algorithm Independent Study, <em>Spring 2021</em></h1>
+
+    <div class="photo">
+      <img src="./img/voltorb.png" width="100px">
+      <p>Picture of a typical board. The top number represents the sum of the scoring tiles, and the bottom number represents the amount of bombs present.</p>
+    </div>
+
+    <p></p><p>Currently working with a friend and Washington University Professor Bill Siever on an Independent Study relating to an Abstract Strategy Game based on the game Voltorb Flip. The game is a hybrid of minesweeper, sudoku, and nonogram and the semi-determnistic/semi-probablistic nature of this hybridization makes generating solutions on large-dimensioned boards difficult. The types of algorithms used to solve the board, such as A-Star and a modified Sudoku Solver have deeper application in biological simulations of protein folding. So far, this independent study has given us the chance to explore the more complex algorithms that are involved in high-level simulations at a simplified and easier-to-understand undegraduate level. The work-in progress code can be found <a href="https://github.com/abohrer23/IndependentStudy">here</a></p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+        <h1><a name="ConnectionsButton"></a>Connections Button, <em>Fall 2017 - Winter 2019</em></h1>
+
+        <div class="photo">
+          <img src="./img/button.png">
+          <p>Picture of the IoT Buton, a phone that manages clicks from the button, and a poster for suicide prevention</p>
+        </div>
+
+        <p></p><p>After losing a friend in my community to suicide, I watned to find a way for technology to aid in suicide prevention rather than being a harmful force. I initially wanted to make an Amazon Alexa integration that would check-in with a student every night as a digital therapist. However, I later learned that year about Amazon's Internet of Things (IoT) Dash Buttons that were the size of a car keyfob, yet could connect to the internet and connect to a server. The buttons held a charge for nearly 2 years on a single AAA battery! Because of this amazing hardware, I decided to switch to using Amazon's IoT button. I used AWS Lambda, AWS IoT, and Twilio to relay a distress signal to a crisis hotline for the owner of a buton in need of rapid assistance. I was interviewed by <a href="https://bit.ly/k5evin">KING 5 News</a>, Seattle's local NBC affiliate, and interviewed by <a href="https://bit.ly/evinbutton">Washington University in St. Louis’ Engineering Magazine</a>. My invention was also featured in the University's Skandilaris Center Creator's Gallery. I handed over the source code to the JED Foundation to work with (the foundation handles college campus suicide prevention for thousands of college campuses). </p>
+
+
+        <h1><a name="NFC"></a>NFC Marketing Case Study, <em>Summer 2018</em></h1>
+        <div class="photo">
+          <img src="./img/nfc.png">
+          <p>Picture of an NFC tag</p>
+        </div>
+        <p> The same Summer I developed my Connections Button, I became obsessed with NFC tags. I ordered a 100 pack of NDEF-Encoded NFC tags from NXP Semiconductors, and after having some fun with using them for automating tasks, I wanted to explore why the technology saw decent consumer adoption in Europe but saw almost no consumer adoption in America. It turns out the historical reason for this is due to Apple's hesitation to add NFC support in the iPhone models, while Europe has a much higher share of Android devices that ship by default with NFC support. However, with extremely robust NFC support coming to Apple iPhones in early 2019 with their upgrading of <a href="https://developer.apple.com/documentation/corenfc ">CoreNFC in iOS 13</a>, I wanted to experiment and see where NFC might find usage. My first thought was with realtors or other low-volume, high-value salespeople. I thought that realtors could potentially benefit from a "smart" business card or simply an NFC emitter that automatically added their information to a client's phone as a contact. Due to how few clients realtors have and how much their clients spend, any potential advantage in finding and retaining clients could be a literal million-dollar difference. And as a salesman, one of the biggest things they attempt is to get their name into a client's phone, something that NFC makes effortless. Most android phones have "appless" NFC reading, which means that without needing to install an app, if an NFC tag is near the phone's reader while it is unlocked, the data on the tag will be automatically scanned, meaning that an NFC-enabled business card could be scanned without fumbling for an app on any phone with an NFC reader. However, Apple does not support this yet. </p>
+
+        <p>To experiment with this idea, I created several NFC tags and gave them to a luxury hairstylist, a Chanel saleswoman, and a realtor. The reception was initially optimistic with the main concern and eventual rejection of them using in their daily work being support, since NFC reading without installing an app is still on its way to being implemented (unlike Android), thus another example of Apple's software and mobile market share dictating the success of solutions such as NFC.  I later recycled this project into my final project for my Honors History class and for the project also talked with realtors about the potential of this technology. I later took this project and wrote it up for my final paper and presentation for my Honors History class (which also included economics, which is what our final unit was on).</p>
+</p>
+
+
+<br><br>
+
+
+
+  </div>
+  <div class="col-sm-3 jump-to-menu">
+    <h1>Jump to</h1>
+          <p><a href="#IndependentStudy">Independent Study</a></p>
+          <p><a href="#ConnectionsButton">Connections Button</a></p>
+          <p><a href="#NFC">NFC Marketing</a></p>
+  </div>
+</div>
+
+    </div>
+
+<br><br>
+
+</body></html>
