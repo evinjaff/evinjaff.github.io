@@ -1,84 +1,104 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projects</title>
-    <link rel="stylesheet" href="./support/lumen-boostrap.min.css">
-    <script src="./support/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="./support/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./support/home.css">
-    <link rel="stylesheet" href="./support/styles.css">
-    <link rel="stylesheet" href="./support/navbar.css">
-    <link rel="stylesheet" href="./support/projects.css">
-  </head>
+<html lang="en">
 
-  <body>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="stylesheet" href="./support/lumen-boostrap.min.css">
+  <script src="./support/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="./support/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./support/home.css">
+  <link rel="stylesheet" href="./support/styles.css">
+  <link rel="stylesheet" href="./support/navbar.css">
+  <link rel="stylesheet" href="./support/projects.css">
+</head>
 
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="site-title">
-          <h1>EVIN JAFF</h1>
-        </div>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="site-title">
+        <h1>EVIN JAFF</h1>
+      </div>
 
       <hr>
 
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- <a class="navbar-brand" href="#">Brand</a> -->
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="#">Brand</a> -->
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Press.html">Press</a></li>
+          <li><a href="Work_Experience.html">Experience</a></li>
+          <li class="active"><a href="Projects.html">Projects</a></li>
+          <li><a href="Skills.html">Skills</a></li>
+
+        </ul>
+
+        <ul class="nav navbar-nav nav-float-right">
+          <li><a href="https://evinjaff.github.io/papers/evinjaff-resume.pdf">Download Resume</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- End Navbar -->
+
+  <div class="container-fluid content">
+    <div class="row projects">
+      <div class="col-sm-9">
+
+        <h1><a name="IndependentStudy"></a>Strategy Algorithm Independent Study, <em>Spring 2021</em></h1>
+
+        <div class="photo">
+          <img src="./img/voltorb.png" width="100px">
+          <p>Picture of a typical board. The top number represents the sum of the scoring tiles, and the bottom number represents the amount of bombs present.</p>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li ><a href="index.html">Home</a></li>
-            <li ><a href="Work_Experience.html">Experience</a></li>
-            <li class="active"><a href="Projects.html">Projects</a></li>
-            <li ><a href="Skills.html">Skills</a></li>
+        <p></p>
+        <p>I am currently working with a friend and Washington University in St. Louis Computer Science Professor, Bill Siever, on an Independent Study relating to an Abstract Strategy Game based on the game Voltorb Flip. The game is a hybrid of
+          minesweeper, sudoku, and nonogram, and the semi-deterministic and semi-probabilistic nature of this hybridization makes generating solutions on large-dimensioned boards complex. The types of algorithms used to solve the board, such as
+          A-Star and a modified Sudoku Solver have deeper application in biological simulations of protein folding. So far, this independent study has given us the chance to explore the more complex algorithms that are involved in high-level
+          simulations at a simplified and easier-to-understand undergraduate level. The work-in-progress code can be found <a href="https://github.com/abohrer23/IndependentStudy">here</a></p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
-          </ul>
+        <h1><a name="JHU"></a>Smart HEPA Filters for COVID-19, <em>Spring 2021</em></h1>
 
-          <ul class="nav navbar-nav nav-float-right">
-            <li><a href="https://evinjaff.github.io/papers/evinjaff-resume.pdf">Download Resume</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+        <div class="photo">
+          <img src="./img/pi.png" width="100px">
+          <p>Prototype of the HEPA Filter controller using a Raspberry Pi.</p>
+        </div>
 
-    <div class="container-fluid content">
-      <div class="row projects">
-  <div class="col-sm-9">
-
-    <h1><a name="IndependentStudy"></a>Strategy Algorithm Independent Study, <em>Spring 2021</em></h1>
-
-    <div class="photo">
-      <img src="./img/voltorb.png" width="100px">
-      <p>Picture of a typical board. The top number represents the sum of the scoring tiles, and the bottom number represents the amount of bombs present.</p>
-    </div>
-
-    <p></p><p>I am currently working with a friend and Washington University in St. Louis Computer Science Professor, Bill Siever, on an Independent Study relating to an Abstract Strategy Game based on the game Voltorb Flip. The game is a hybrid of minesweeper, sudoku, and nonogram, and the semi-deterministic and semi-probabilistic nature of this hybridization makes generating solutions on large-dimensioned boards complex. The types of algorithms used to solve the board, such as A-Star and a modified Sudoku Solver have deeper application in biological simulations of protein folding. So far, this independent study has given us the chance to explore the more complex algorithms that are involved in high-level simulations at a simplified and easier-to-understand undergraduate level. The work-in-progress code can be found <a href="https://github.com/abohrer23/IndependentStudy">here</a></p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <h1><a name="JHU"></a>Smart HEPA Filters for COVID-19, <em>Spring 2021</em></h1>
-
-    <div class="photo">
-      <img src="./img/pi.png" width="100px">
-      <p>Prototype of the HEPA Filter controller using a Raspberry Pi.</p>
-    </div>
-
-    <p></p><p>In the Spring of 2019, all Washington University in St. Louis students were sent home. While home in the Spring, some students, including my friends and I, had some extra time on our hands. With that extra time, a team of friends and I got together and applied to compete in Johns Hopkins University's COVID-19 Design Challenge. We were accepted and quickly got to work finding a problem to look at. We quickly settled on ventilation, specifically, the use of low-cost and widely available HEPA filtration units to create negative pressure rooms, a tool extremely important in preventing the inter-patient spread of COVID-19. Negative pressure rooms were first used for invasive surgeries such as heart transplants to reduce the spread of bacteria and other viruses and are used more ubiquitously today in controlling contagious and deadly viruses in hospitals. HEPA units replace the existing expensive systems that induce negative pressure but are less accurate in maintaining negative pressure. Normally, there is little need to have more than 2-5 negative pressure rooms per hospital, but with the rise of COVID-19, the demand for negative pressure rooms skyrocketed for patients with immunocompromised or non-elective surgeries who would die otherwise if they contracted COVID-19 as well as for COVID-19 patients. With the high cost of negative filters, the solution of HEPA units emerges. However, these units are inexpensive for a reason; they often require a nurse to check the unit every couple of hours to verify that the unit is still maintaining negative pressure. With the already high workload that nurses face, any extra work could have a devastating effect on a nurse's ability to work so we sprang into action to design a device that monitors the HEPA filtration unit. With our remote situation, I didn't have direct access to a HEPA filter, so as the engineer on the team, I took a raspberry pi and mimic a peripheral sensor using a microphone to simulate high and low voltages as a sensor might return. This allowed our group to construct a negative feedback loop and then design a management system that would allow a single Raspberry Pi to control multiple negative pressure rooms. Our invention was well-received, and we even had our team's work published in  <a href="https://bit.ly/jhu-covid">Washington University's Engineering Magazine</a> with 2 other Washington University teams.</p>
-    <br>
+        <p></p>
+        <p>In the Spring of 2019, all Washington University in St. Louis students were sent home. While home in the Spring, some students, including my friends and I, had some extra time on our hands. With that extra time, a team of friends and I got
+          together and applied to compete in Johns Hopkins University's COVID-19 Design Challenge. We were accepted and quickly got to work finding a problem to look at. We quickly settled on ventilation, specifically, the use of low-cost and widely
+          available HEPA filtration units to create negative pressure rooms, a tool extremely important in preventing the inter-patient spread of COVID-19. Negative pressure rooms were first used for invasive surgeries such as heart transplants to
+          reduce the spread of bacteria and other viruses and are used more ubiquitously today in controlling contagious and deadly viruses in hospitals. HEPA units replace the existing expensive systems that induce negative pressure but are less
+          accurate in maintaining negative pressure. Normally, there is little need to have more than 2-5 negative pressure rooms per hospital, but with the rise of COVID-19, the demand for negative pressure rooms skyrocketed for patients with
+          immunocompromised or non-elective surgeries who would die otherwise if they contracted COVID-19 as well as for COVID-19 patients. With the high cost of negative filters, the solution of HEPA units emerges. However, these units are
+          inexpensive for a reason; they often require a nurse to check the unit every couple of hours to verify that the unit is still maintaining negative pressure. With the already high workload that nurses face, any extra work could have a
+          devastating effect on a nurse's ability to work so we sprang into action to design a device that monitors the HEPA filtration unit. With our remote situation, I didn't have direct access to a HEPA filter, so as the engineer on the team, I
+          took a raspberry pi and mimic a peripheral sensor using a microphone to simulate high and low voltages as a sensor might return. This allowed our group to construct a negative feedback loop and then design a management system that would
+          allow a single Raspberry Pi to control multiple negative pressure rooms. Our invention was well-received, and we even had our team's work published in <a href="https://bit.ly/jhu-covid">Washington University's Engineering Magazine</a> with
+          2 other Washington University teams.</p>
+        <br>
 
 
 
@@ -90,7 +110,13 @@
           <p>Picture of the IoT Buton, a phone that manages clicks from the button, and a poster for suicide prevention</p>
         </div>
 
-        <p></p><p>After losing a friend in my community to suicide, I wanted to find a way for technology to aid in suicide prevention rather than being a force for evil. I initially wanted to make an Amazon Alexa integration that would check in with a student every night as a digital therapist. However, I later learned that year about Amazon's Internet of Things (IoT) Dash Buttons that were the size of a keyfob, yet could connect to a server across the internet. The buttons were resilient too and held a charge for nearly 2 years on a single AAA battery! Because of this amazing hardware, I decided to switch to using Amazon's IoT button. I used AWS Lambda, AWS IoT, and Twilio to relay a distress signal to a crisis hotline for the owner of a button in need of rapid assistance. I was interviewed by <a href="https://bit.ly/k5evin">KING 5 News</a>, Seattle's local NBC affiliate, and interviewed by <a href="https://bit.ly/evinbutton">Washington University in St. Louis’ Engineering Magazine</a>. My invention was also featured in the University's Skandilaris Center Creator's Gallery. I handed over the source code to the JED Foundation to work with (the foundation handles college campus suicide prevention for thousands of college campuses). </p>
+        <p></p>
+        <p>After losing a friend in my community to suicide, I wanted to find a way for technology to aid in suicide prevention rather than being a force for evil. I initially wanted to make an Amazon Alexa integration that would check in with a
+          student every night as a digital therapist. However, I later learned that year about Amazon's Internet of Things (IoT) Dash Buttons that were the size of a keyfob, yet could connect to a server across the internet. The buttons were
+          resilient too and held a charge for nearly 2 years on a single AAA battery! Because of this amazing hardware, I decided to switch to using Amazon's IoT button. I used AWS Lambda, AWS IoT, and Twilio to relay a distress signal to a crisis
+          hotline for the owner of a button in need of rapid assistance. I was interviewed by <a href="https://bit.ly/k5evin">KING 5 News</a>, Seattle's local NBC affiliate, and interviewed by <a href="https://bit.ly/evinbutton">Washington University
+            in St. Louis’ Engineering Magazine</a>. My invention was also featured in the University's Skandilaris Center Creator's Gallery. I handed over the source code to the JED Foundation to work with (the foundation handles college campus
+          suicide prevention for thousands of college campuses). </p>
 
         <br>
         <br>
@@ -102,28 +128,40 @@
           <img src="./img/nfc.png">
           <p>Picture of an NFC tag</p>
         </div>
-        <p> The same Summer I developed my Connections Button, I became obsessed with NFC tags. I ordered a 100 pack of NDEF-Encoded NFC tags from NXP Semiconductors, and after having some fun with using them for automating tasks, I wanted to explore why the technology saw decent consumer adoption in Europe but saw almost no consumer adoption in America. It turns out the historical reason for this is due to Apple's hesitation to add NFC support in the iPhone models, while Europe has a much higher share of Android devices that ship by default with NFC support. However, with extremely robust NFC support coming to Apple iPhones in early 2019 with their upgrading of <a href="https://developer.apple.com/documentation/corenfc ">CoreNFC in iOS 13</a>, I wanted to experiment and see where NFC might find usage. My first thought was with realtors or other low-volume, high-value salespeople. I thought that realtors could potentially benefit from a "smart" business card or simply an NFC emitter that automatically added their information to a client's phone as a contact. Due to how few clients realtors have and how much their clients spend, any potential advantage in finding and retaining clients could be a literal million-dollar difference. And as a salesman, one of the biggest things they attempt is to get their name into a client's phone, something that NFC makes effortless. Most android phones have "appless" NFC reading, which means that without needing to install an app, if an NFC tag is near the phone's reader while it is unlocked, the data on the tag will be automatically scanned, meaning that an NFC-enabled business card could be scanned without fumbling for an app on any phone with an NFC reader. However, Apple does not support this yet. </p>
+        <p> The same Summer I developed my Connections Button, I became obsessed with NFC tags. I ordered a 100 pack of NDEF-Encoded NFC tags from NXP Semiconductors, and after having some fun with using them for automating tasks, I wanted to explore
+          why the technology saw decent consumer adoption in Europe but saw almost no consumer adoption in America. It turns out the historical reason for this is due to Apple's hesitation to add NFC support in the iPhone models, while Europe has a
+          much higher share of Android devices that ship by default with NFC support. However, with extremely robust NFC support coming to Apple iPhones in early 2019 with their upgrading of <a
+            href="https://developer.apple.com/documentation/corenfc ">CoreNFC in iOS 13</a>, I wanted to experiment and see where NFC might find usage. My first thought was with realtors or other low-volume, high-value salespeople. I thought that
+          realtors could potentially benefit from a "smart" business card or simply an NFC emitter that automatically added their information to a client's phone as a contact. Due to how few clients realtors have and how much their clients spend, any
+          potential advantage in finding and retaining clients could be a literal million-dollar difference. And as a salesman, one of the biggest things they attempt is to get their name into a client's phone, something that NFC makes effortless.
+          Most android phones have "appless" NFC reading, which means that without needing to install an app, if an NFC tag is near the phone's reader while it is unlocked, the data on the tag will be automatically scanned, meaning that an
+          NFC-enabled business card could be scanned without fumbling for an app on any phone with an NFC reader. However, Apple does not support this yet. </p>
 
-        <p>To experiment with this idea, I created several NFC tags and gave them to a luxury hairstylist, a Chanel saleswoman, and a realtor. The reception was initially optimistic with the main concern and eventual rejection of them using in their daily work being support, since NFC reading without installing an app is still on its way to being implemented (unlike Android), thus another example of Apple's software and mobile market share dictating the success of solutions such as NFC.  I later recycled this project into my final project for my Honors History class and for the project also talked with realtors about the potential of this technology. I later took this project and wrote it up for my final paper and presentation for my Honors History class (which also included economics, which is what our final unit was on).</p>
-</p>
+        <p>To experiment with this idea, I created several NFC tags and gave them to a luxury hairstylist, a Chanel saleswoman, and a realtor. The reception was initially optimistic with the main concern and eventual rejection of them using in their
+          daily work being support, since NFC reading without installing an app is still on its way to being implemented (unlike Android), thus another example of Apple's software and mobile market share dictating the success of solutions such as
+          NFC. I later recycled this project into my final project for my Honors History class and for the project also talked with realtors about the potential of this technology. I later took this project and wrote it up for my final paper and
+          presentation for my Honors History class (which also included economics, which is what our final unit was on).</p>
+        </p>
 
 
-<br><br>
+        <br><br>
 
 
 
-  </div>
-  <div class="col-sm-3 jump-to-menu">
-    <h1>Jump to</h1>
-          <p><a href="#IndependentStudy">Independent Study</a></p>
-          <p><a href="#ConnectionsButton">Connections Button</a></p>
-          <p><a href="#NFC">NFC Marketing</a></p>
-          <p><a href="#JHU">Smart HEPA Filters for COVID-19</a></p>
-  </div>
-</div>
-
+      </div>
+      <div class="col-sm-3 jump-to-menu">
+        <h1>Jump to</h1>
+        <p><a href="#IndependentStudy">Independent Study</a></p>
+        <p><a href="#ConnectionsButton">Connections Button</a></p>
+        <p><a href="#NFC">NFC Marketing</a></p>
+        <p><a href="#JHU">Smart HEPA Filters for COVID-19</a></p>
+      </div>
     </div>
 
-<br><br>
+  </div>
 
-</body></html>
+  <br><br>
+
+</body>
+
+</html>
