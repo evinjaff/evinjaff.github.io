@@ -1,0 +1,18 @@
+.projects img{border-style:solid;border-width:1px;border-color:grey}@media (min-width: 768px){.projects img{width:300px}}@media (max-width: 768px){.projects img{width:100%}}.jump-to-menu h1{text-align:center}.jump-to-menu p{margin-bottom:5px}
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 100%;
+    z-index: 3;
+}
+
+div.sticky{
+position: -webkit-sticky; /* Safari */
+position: sticky;
+display:flex;
+top: 0;
+z-index: 3;
+}
