@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Evin Jaff - Projects</title>
   <link rel="stylesheet" href="./support/lumen-boostrap.min.css">
-  <script src="./support/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="./support/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="./support/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="./support/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
   <link rel="stylesheet" href="./support/home.css">
   <link rel="stylesheet" href="./support/styles.css">
   <link rel="stylesheet" href="./support/navbar.css">
@@ -26,7 +29,8 @@
 
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -58,192 +62,348 @@
     <div class="row projects">
       <div class="col-sm-9">
 
-         <h1><a name="IndependentStudy"></a>Speedruns Unchained, <em>Spring 2022</em></h1>
+        <h1><a name="MissySeniorDesign"></a>BME Senior Design Team, <em>Fall 2021 - Spring 2022</em></h1>
 
         <div class="photo">
-          <img src="./img/voltorb.png" width="100px">
-          <p>Picture of the UI</p>
+          <img src="./img/stent.png" width="100">
+          <p>Picture of a surgical uretal stent. The prototyped version in development is intended to act as a drop-in
+            replacement to existing surgical workflows</p>
         </div>
 
-        <p></p>
-        <p>Over my spring break, I chose to stay at University instead of go anywhere fun. While I was at university, I challenged myself to hack together a full web application for this idea of a speedrunning party game. The premise is simple enough; a group of friends can go to a website where they can select a few video games, input the types of challenges they want, and then a full fledged interface pits people in the group againt each other in a challenge.
 
-           <br>
-          <br>
-
-          The model for how content for this game works is simple. There's a "community app" and a "game app." Both sites share a common database, but the community app is designed to build and filter out challenges in a reddit-like manner. Users can post challenges and other users can upvote, downvote, and comment on challenges proposed. The idea being that good challenges should "float to the top." Theoretically, the top challenges from the "community app" should then feed into the "game app." With of course there being some degree of moderation before the uploaded challenges can actually be accessed to avoid low-quality submissions. Additionally, the app is open source and can be "off-the-grid," meaning that anyone who wants to host this version of the app on their local network and keep their own SQLite databse could do that if say a streamer prone to trolling wanted to use the framework off-network and could pull down binaries of the SQLite database to use.
-
-          <br>
-          <br>
-
-          For the "community app," I took this as an opportunity to learn Django, and I can confidently say that I do not like Django. Well, I don't dislike Django specifically, it seems really powerful but I find it really confusing and inflexible. It seems like the framework is built for exactly one type of thing, and if your website doesn't want to do that one thing, you'll be stuck writing hundreds of custom functions to get basic things working with no documentation and complicated debugging workflows. In hindsight, I could've tried using Flask, Ruby on Rails, or Meteor, but I had reasons to be wary of each one. I didn't want to learn Ruby in addition to a new framework in a week, I didn't want to be stuck in dependency hell for Flask, and Meteor seemed a little too bleeding-edge for what I was doing. Plus, I thought that one of my High School friends, Corey Wood, had written some stuff in Django so I could always text him. As it turns out, the site I thought he built in Django was actually just Vue so that was a big fat zero.
-          <br>
-          <br>
-          I built out the "game app" using my bread and butter, vanilla JS (with a little JQuery), Node.js, and Socket.io. I hosted a static server using Node.js and created a basic Socket.io backend to handle queries to the SQLite database. Long-term, I am going to convert this JavaScript to TypeScript, just because that's becoming the industry standard and I would love to learn TypeScript.
-
-        <br>
-        <br>
-
-        The GitHub pages for the project can be found <a href="https://evinjaff.github.io/speedrunsunchained">here</a>. It's in early alpha right now, but I'm hoping that this will eventually become a sweet open-source party game for you and your video-game loving friends to play!</p>
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-         <h1><a name="IndependentStudy"></a>BME Senior Design Project Contributor, <em>Fall 2021 - Spring 2022</em></h1>
-
-        <div class="photo">
-          <img src="./img/voltorb.png" width="100px">
-          <p>Picture of a typical board. The top number represents the sum of the scoring tiles, and the bottom number represents the amount of bombs present.</p>
-        </div>
-
-        <p></p>
-        <p>While a junior, I was invited to collaborate on a senior design project focused on urologic surgery. The client for the senior project, Dr. Nimrod at the Washington University School of Medicine, wanted a solution that could detect if a heated scalpel was too close to the ureter. I worked with the team to come up with different insturmentation methods. We considered infared, x-ray, and, ultrasound among other ideas until eventually settling on temperature sensing. The idea is for an array of thermocouples to be placed at various locations near the ureter and embedded inside the stent. This way, if one region starts to heat up, we can determine if the scalpel is nearing the ureter and beep a PC-like speaker or similar invervention to singal that the scalpel should be pulled out.
-
-        <br>
-        <br>
-
-        The team is current designing a prototype and will present the prototype at the end of the Sping 2020 semester. Their project website can be found <a href="https://sites.wustl.edu/bme401fall2021group10/project-overview/">here</a>.</p>
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-        <h1><a name="IndependentStudy"></a>Strategy Algorithm Independent Study, <em>Spring 2021</em></h1>
-
-        <div class="photo">
-          <img src="./img/voltorb.png" width="100px">
-          <p>Picture of a typical board. The top number represents the sum of the scoring tiles, and the bottom number represents the amount of bombs present.</p>
-        </div>
-
-        <p></p>
-        <p>I worked with a friend and Professor Bill Siever on an Independent Study focusing on an Abstract Strategy Game algorithm analysis based on the game Voltorb Flip. The game is a hybrid of
-          minesweeper, sudoku, and nonogram, and the semi-deterministic and semi-probabilistic hybrid makes generating efficient solutions on n-dimensional boards difficult. The types of algorithms used to solve the board, such as
-          A-Star and a modified Sudoku Solver have deeper application in biological simulations of protein folding. This independent study gave us the chance to explore more complex algorithms involved in high-level
-          simulation with limited knowledge as sophomores. The codebase can be found <a href="https://github.com/abohrer23/IndependentStudy">here</a></p>
-          <p>The final paper can be found <a href="https://evinjaff.github.io/papers/VoltorbFlip.pdf">here</a></p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-         <h1><a name="IndependentStudy"></a>Bearzlet, <em>Spring 2021</em></h1>
-
-        <div class="photo">
-          <img src="./img/bearzlet.png" width="100px">
-          <p>Picture of the Bearzlet interface. We chose some objectively ugly CSS on purpose.</p>
-        </div>
-
-        <p></p>
-        <p>My final project for CSE 330 was an app called Bearzlet, a Quizlet-like app written from scratch. I built the side toghether with Alaina Bohrer. The site uses accounts and upon account creation, the user must verify their email address with a special token. Upon login with a verified email, a user is able to create public or private sets, star sets, as well as study their sets. A user is also able to see statistics on how well they are doing on the cards. On any set a user has access too, they can play a write game to study. If a user misses cards, they can also "star" dificult cards and play those starred cards.
+        <p>While a junior, I was invited to collaborate on a senior design project focused on urologic surgery. The
+          client for the senior project, Dr. Nimrod at the Washington University School of Medicine, wanted a solution
+          that could detect Iatrogenic Ureteral Injury during an operation. I worked with the team to come up with
+          different instrumentation methods, and helped develop and prototype a solution. We considered infrared, x-ray,
+          and ultrasound among other ideas until eventually settling on temperature sensing. The idea is for an array of
+          thermocouples/thermistors to be placed at various locations near the ureter and inside the stent. This way, if
+          one region starts to heat up, we can determine if the scalpel is nearing the ureter and trigger a buzzer or
+          other intervention to signal that the scalpel should be removed.
 
           <br>
           <br>
 
-          The app was written using a diverse stack of languages and frameworks. The frontend was built using Vue.js, and the page was compiled in Electronjs to build the website to a dedicated desktop binary. The backend of the application uses PHP and MongoDB to manage the data, and the frontend uses AJAX requests to get data from the frontend. And I just want to take a second to say that I love MongoDB; it is a beautiful way to run a database. Though setting up the PHP client with composer was annoying. Our application has been tested for basic web security and is reasonably safe from SQL/Database Injection, XSS, CRSF forgery, and other simple penetration methods.
+          <p>We are current prototyping a solution on an Arduino and plan to publish an open-source repository of the
+            microntroller code. We will also present a polished prototype at the end of the Spring 2022
+          semester. The project website can be found <a
+            href="https://sites.wustl.edu/bme401fall2021group10/project-overview/">here</a>.</p>
 
-          <br>
-          <br>
-
-          A link to the GitHub repository can be found <a href="github.com">here</a>
-
-        <br>
-        <br>
-     
-
-        <h1><a name="JHU"></a>Smart HEPA Filters for COVID-19, <em>Spring 2021</em></h1>
-
-        <div class="photo">
-          <img src="./img/pi.png" width="100px">
-          <p>Prototype of the HEPA Filter controller using a Raspberry Pi.</p>
-        </div>
-
-        <p></p>
-        <p>In the Spring of 2020, all Washington University in St. Louis students were sent home. While home in the Spring, some students, including my friends and I, had some extra time on our hands. With that extra time, a team of friends and I got
-          together and applied to compete in Johns Hopkins University's COVID-19 Design Challenge. We were accepted and quickly got to work finding a problem to look at. We quickly settled on ventilation, specifically, the use of low-cost and widely
-          available HEPA filtration units to create negative pressure rooms, a tool extremely important in preventing the inter-patient spread of COVID-19. Negative pressure rooms were first used for invasive surgeries such as heart transplants to
-          reduce the spread of bacteria and other viruses and are used more ubiquitously today in controlling contagious and deadly viruses in hospitals. HEPA units replace the existing expensive systems that induce negative pressure but are less
-          accurate in maintaining negative pressure. Normally, there is little need to have more than 2-5 negative pressure rooms per hospital, but with the rise of COVID-19, the demand for negative pressure rooms skyrocketed for patients with
-          immunocompromised or non-elective surgeries who would die otherwise if they contracted COVID-19 as well as for COVID-19 patients. With the high cost of negative filters, the solution of HEPA units emerges. However, these units are
-          inexpensive for a reason; they often require a nurse to check the unit every couple of hours to verify that the unit is still maintaining negative pressure. With the already high workload that nurses face, any extra work could have a
-          devastating effect on a nurse's ability to work so we sprang into action to design a device that monitors the HEPA filtration unit. With our remote situation, I didn't have direct access to a HEPA filter, so as the engineer on the team, I
-          took a raspberry pi and mimic a peripheral sensor using a microphone to simulate high and low voltages as a sensor might return. This allowed our group to construct a negative feedback loop and then design a management system that would
-          allow a single Raspberry Pi to control multiple negative pressure rooms. Our invention was well-received, and we even had our team's work published in <a href="https://bit.ly/jhu-covid">Washington University's Engineering Magazine</a> with
-          2 other Washington University teams.</p>
-        <br>
-
-        <h1><a name="FESOV"></a>Fire Emblem Echoes Randomizer <em>Spring/Summer 2020</em></h1>
-
-        <div class="photo">
-          <img src="./img/FESOV.png" width="100px">
-          <p>Photo of the website interface</p>
-        </div>
-
-        <p></p>
-        <p>During the COVID-19 pandemic, I really got into Nintendo 3DS homebrew. I also got my wisdom teeth out around then, and needed a game to play on my 3DS while recovering. I particually loved the Fire Emblem series, and I really got into Fire Emblem Echoes: Shadows of Valentia. I had already played the game as a camp counselor at Camp Parsons about 3 years before, and I really enjoyed it my second time. I decided to dive deeper into the game's homebrew scene, and I even joined a modding server. I always hated how when you mod a game, you almost always have to download some sketchy .rar with a windows .exe in it like with the Universal Pokemon Randomizer. In an effort to buck this trend, I built a web app that generated a JSON that could sort of randomize the game through the Paragon editor for Fire Emblem echoes. The web app was 100% built in vanila JS, and exports a JSON from forms. It is horribly written as I didn't have any formal computer science or web development experience at this point. But for my personal use... it was a success!! With some tinkering I played through a fully randomized campaign. A lot of people might be embarrased by their old code like this, but I'm happy to show it because I feel like everyone has to start somewhere, and sometimes it's fun to just hack together some code if you need 
-          <br>
-          <br>
-
-          It has been a long time since I worked on this project, and I have no idea if this still works since Paragon may have updated itself. If you'd like to try it out, you can find a it <a href="https://evinjaff.github.io/FESOV-randomizer/">here</a>.
-          <br>
-
-        </p>
         
-        
+            <h1><a name="MissySeniorDesign"></a>Javaduino, <em>Spring 2022</em></h1>
+
+            <div class="photo">
+              <img src="./img/javaduino.png" width="100">
+              <p>Picture of the interpreter running an Arduino assembly file</p>
+            </div>
+    
+    
+            <p>For the final group project in CSE 237, I as well as another Sophomore and Junior decided to build a from-scratch Arduino Assembly Interpreter written in Java.
+              CSE 237 is a class on programming tools and techniques so we to adhere to a strict clean code techniques as well as best practice planning and contribution 
+              models. This included the use of branching and pull requests, a Kanban board, code review, and external peer review. 
+            </p>
+
+            <p>The Arduino Assembly interpreter is able to take in a .S assembly file for the AVR instruction set (specifically for the Arduino Uno), and then
+              interprets the file and runs it through a virtual CPU to follow the instructions. By the end of the semester, we intend to have the interpreter able
+              to run assembly files containing basic arithmetic instructions, simple function calls, and branching. With extra time or if we work fast, we would also love to implement
+              a "rewind" function to step back assembly instructions, an option to pause/step execution and insert new assembly lines, and a virtual GPIO pin.
+            </p>
+    
+              <p>An in-progress repository of our team's project can be found   <a
+                  href="https://github.com/CSE237SP2022/project-viswanathan-jaff-rose">here</a>.</p>
 
 
 
+          <h1><a name="speedrunsunchained"></a>Speedruns Unchained, <em>Spring 2022</em></h1>
 
-        <h1><a name="ConnectionsButton"></a>Connections Button, <em>Fall 2017 - Winter 2019</em></h1>
+          <div class="photo">
+            <img src="./img/speedrunsunchainedlogo.png" width="200px">
+            <p>The SpeedrunsUnchained Logo</p>
+          </div>
 
-        <div class="photo">
-          <img src="./img/button.png">
-          <p>Picture of the IoT Buton, a phone that manages clicks from the button, and a poster for suicide prevention</p>
-        </div>
+          <p></p>
+          <p>Over my spring break, I chose to stay at University instead of go anywhere fun. While I was there,
+            I challenged myself to write a full stack app for my idea of a speedrunning party game. The
+            premise is simple enough; a group of friends can go to a website where they can select a few video games,
+            input the types of challenges they want, and then a full fledged interface pits people in the group against
+            each other in video game challenges.
 
-        <p></p>
-        <p>After losing a friend in my community to suicide, I wanted to find a way for technology to aid in suicide prevention rather than being a force for evil. I initially wanted to make an Amazon Alexa integration that would check in with a
-          student every night as a digital therapist. However, I later learned that year about Amazon's Internet of Things (IoT) Dash Buttons that were the size of a keyfob, yet could connect to a server across the internet. The buttons were
-          resilient too and held a charge for nearly 2 years on a single AAA battery! Because of this amazing hardware, I decided to switch to using Amazon's IoT button. I used AWS Lambda, AWS IoT, and Twilio to relay a distress signal to a crisis
-          hotline for the owner of a button in need of rapid assistance. I was interviewed by <a href="https://bit.ly/k5evin">KING 5 News</a>, Seattle's local NBC affiliate, and interviewed by <a href="https://bit.ly/evinbutton">Washington University
-            in St. Louis’ Engineering Magazine</a>. My invention was also featured in the University's Skandilaris Center Creator's Gallery. I handed over the source code to the JED Foundation to work with (the foundation handles college campus
-          suicide prevention for thousands of college campuses). </p>
+            <br>
+            <br>
 
-        <br>
-        <br>
-        <br>
-        <br>
+            This one app, however, is actually two! There's a "community app" and a "game app." Both
+            sites share a common database, and the community app is designed to build and filter out challenges in a
+            reddit-like forum, while the game uses the database to actually host the games. The app is open source and thus can be "off-the-grid," meaning that anyone who wants to host this
+            version of the app on their local network and keep their own SQLite game database could do that if say a streamer
+             wanted to use the app off-network to avoid low-quality submission on a stream.
 
-        <h1><a name="NFC"></a>NFC Marketing Case Study, <em>Summer 2018</em></h1>
-        <div class="photo">
-          <img src="./img/nfc.png">
-          <p>Picture of an NFC tag</p>
-        </div>
-        <p> The same Summer I developed my Connections Button, I became obsessed with NFC tags. I ordered a 100 pack of NDEF-Encoded NFC tags from NXP Semiconductors, and after having some fun with using them for automating tasks, I wanted to explore
-          why the technology saw decent consumer adoption in Europe but saw almost no consumer adoption in America. It turns out the historical reason for this is due to Apple's hesitation to add NFC support in the iPhone models, while Europe has a
-          much higher share of Android devices that ship by default with full NFC support. However, with NFC support coming to iPhones in early 2019 with the upgrading of <a
-            href="https://developer.apple.com/documentation/corenfc ">CoreNFC in iOS 13</a>, I wanted to experiment and see where NFC might find usage. My first thought was with realtors or other low-volume, high-value salespeople. I thought that
-          realtors could potentially benefit from a "smart" business card or simply an NFC emitter that automatically added their information to a client's phone as a contact. Due to how few clients realtors have and how much their clients spend, any
-          potential advantage in finding and retaining clients could be a literal million-dollar difference. And as a salesman, one of the biggest things they attempt is to get their name into a client's phone, something that NFC makes effortless.
-          Most android phones have "appless" NFC reading, which means that without needing to install an app, if an NFC tag is near the phone's reader while it is unlocked, the data on the tag will be automatically scanned, meaning that an
-          NFC-enabled business card could be scanned without fumbling for an app on any phone with an NFC reader. However, Apple does not support this, and has not showed plans to implement this as of 2022.</p>
+            <br>
+            <br>
 
-        <p>To experiment with this idea, I created several NFC tags and gave them to a luxury hairstylist, a Chanel saleswoman, and a realtor. The reception was initially optimistic. However, in all cases, the product was eventually rejected in
-          for their daily routine with the main reason being support. As previously mentioned, appless NFC reading without installing an app is still on its way to being implemented on iOS despite the hardware being present. This small case study 
-          could be considered another example of Apple's mobile market share dictating the success of solutions such as NFC. As an alternative to NFC, Apple has implemented native QR code reading in their camera app.</p> 
-          
-          <p>I later recycled this project into my final project for my Honors History class and for the project also talked with realtors about the potential of this technology. I later took this project and wrote it up for my final paper and
-          presentation for my Honors History class (which also included economics, which is what our final unit was on).</p>
-        </p>
+            For the "community app," I took this as an opportunity to learn Django, and I can confidently say that I do
+            not like Django. Well, I don't dislike Django specifically, it seems really powerful but I find it really
+            confusing and inflexible. It seems like the framework is built for exactly one type of thing, and if your
+            website doesn't want to do that one thing, you'll be stuck writing hundreds of custom functions to get basic
+            things working. In hindsight, I could've tried using Flask, Ruby on Rails, or Meteor, but I had reasons to be wary of each one. 
+            I didn't want to learn Ruby in addition to a new framework, I didn't want to be stuck in dependency hell for Flask, and Meteor
+            seemed a little too bleeding-edge for what I was doing.
+            <br>
+            <br>
+            I built out the "game app" using my bread and butter, vanilla JS (with a little JQuery), Node.js, and
+            Socket.io. I hosted a static server using Node.js and created a basic Socket.io backend to handle queries to
+            the SQLite database. Long-term, I am going to convert this JavaScript to TypeScript, just because that's
+            becoming the industry standard.
+
+            <br>
+            <br>
+
+            The GitHub pages for the project can be found <a
+              href="https://evinjaff.github.io/speedrunsunchained">here</a>. It's in early alpha right now, but I'm
+            hoping that this will eventually become a sweet open-source party game for you and your video-game loving friends to play!</p>
 
 
-        <br><br>
+
+          <h1><a name="IndependentStudy"></a>Strategy Algorithm Independent Study, <em>Spring 2021</em></h1>
+
+          <div class="photo">
+            <img src="./img/voltorb.png" width="100">
+            <p>Picture of a typical board. The top number represents the sum of the scoring tiles, and the bottom number
+              represents the amount of bombs present.</p>
+          </div>
+
+          <p></p>
+          <p>I worked with a friend and Professor Bill Siever on an Independent Study focusing on an Abstract Strategy
+            Game algorithm analysis based on the game Voltorb Flip. The game is a hybrid of
+            minesweeper, sudoku, and nonogram, and the semi-deterministic and semi-probabilistic hybrid makes generating
+            efficient solutions on n-dimensional boards difficult. The types of algorithms used to solve the board, such
+            as
+            A-Star and a modified Sudoku Solver have deeper application in biological simulations of protein folding.
+            This
+            independent study gave us the chance to explore more complex algorithms involved in high-level
+            simulation with limited knowledge as sophomores. </p>
+            
+            <br>
+            <br>
+            <p>The codebase can be found <a
+              href="https://github.com/abohrer23/IndependentStudy">here</a>, and the final paper can be found <a href="https://evinjaff.github.io/papers/VoltorbFlip.pdf">here</a></p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <h1><a name="IndependentStudy"></a>Bearzlet, <em>Spring 2021</em></h1>
+
+          <div class="photo">
+            <img src="./img/bearzlet.png" width="100" alt="Picture of the Bearzlet interface">
+            <p>Picture of the Bearzlet interface. We chose some objectively ugly CSS on purpose.</p>
+          </div>
+
+          <p></p>
+          <p>My final project for CSE 330 was an app called Bearzlet, a Quizlet-like app written from scratch. I built
+            the
+            side toghether with Alaina Bohrer. The site uses accounts and upon account creation, the user must verify
+            their email address with a special token. Upon login with a verified email, a user is able to create public
+            or
+            private sets, star sets, as well as study their sets. A user is also able to see statistics on how well they
+            are doing on the cards. On any set a user has access too, they can play a write game to study. If a user
+            misses cards, they can also "star" dificult cards and play those starred cards.
+
+            <br>
+            <br>
+            <p>
+            The app was written using a diverse stack of languages and frameworks. The frontend was built using Vue.js,
+            and the page was compiled in Electronjs to build the website to a dedicated desktop binary. The backend of
+            the
+            application uses PHP and MongoDB to manage the data, and the frontend uses AJAX requests to get data from
+            the
+            frontend. As an aside, I love MongoDB. It is a beautiful way to run a
+            database. Though setting up the MongoDB PHP client with composer was annoying. Our application has been tested for
+            basic web security and is reasonably safe from SQL/Database Injection, XSS, CRSF forgery, and other simple
+            penetration methods.
+            </p>
+            <br>
+
+            <p>
+            Pending approval from Professor Sproull, a link to the GitHub repository will be made available.
+            </p>
+            <br>
+            <br>
+
+
+            <h1><a name="JHU"></a>Smart HEPA Filters for COVID-19, <em>Spring 2020</em></h1>
+
+            <div class="photo">
+              <img src="./img/pi.png" width="100">
+              <p>Prototype of the HEPA Filter controller using a Raspberry Pi.</p>
+            </div>
+
+            <p></p>
+            <p>In the Spring of 2020, all Washington University in St. Louis students were sent home. While home in the
+              Spring, some students, including my friends and I, had some extra time on our hands. With that extra time,
+              a
+              team of friends and I got
+              together and applied to compete in Johns Hopkins University's COVID-19 Design Challenge. We were accepted
+              and quickly got to work finding a problem to look at. We quickly settled on ventilation, specifically, the
+              use of low-cost and widely
+              available HEPA filtration units to create negative pressure rooms, a tool extremely important in
+              preventing
+              the inter-patient spread of COVID-19. Negative pressure rooms were first used for invasive surgeries such
+              as
+              heart transplants to
+              reduce the spread of bacteria and other viruses and are used more ubiquitously today in controlling
+              contagious and deadly viruses in hospitals. HEPA units replace the existing expensive systems that induce
+              negative pressure but are less
+              accurate in maintaining negative pressure. Normally, there is little need to have more than 2-5 negative
+              pressure rooms per hospital, but with the rise of COVID-19, the demand for negative pressure rooms
+              skyrocketed for patients with
+              immunocompromised or non-elective surgeries who would die otherwise if they contracted COVID-19 as well as
+              for COVID-19 patients. With the high cost of negative filters, the solution of HEPA units emerges.
+              However,
+              these units are
+              inexpensive for a reason; they often require a nurse to check the unit every couple of hours to verify
+              that
+              the unit is still maintaining negative pressure. With the already high workload that nurses face, any
+              extra
+              work could have a
+              devastating effect on a nurse's ability to work so we sprang into action to design a device that monitors
+              the HEPA filtration unit. With our remote situation, I didn't have direct access to a HEPA filter, so as
+              the
+              engineer on the team, I
+              took a raspberry pi and mimic a peripheral sensor using a microphone to simulate high and low voltages as
+              a
+              sensor might return. This allowed our group to construct a negative feedback loop and then design a
+              management system that would
+              allow a single Raspberry Pi to control multiple negative pressure rooms. Our invention was well-received,
+              and we even had our team's work published in <a href="https://bit.ly/jhu-covid">Washington University's
+                Engineering Magazine</a> with
+              2 other Washington University teams.</p>
+            <br>
+
+            <h1><a name="FESOV"></a>Fire Emblem Echoes Randomizer <em>Spring/Summer 2020</em></h1>
+
+            <div class="photo">
+              <img src="./img/FESOV.png" width="100">
+              <p>Photo of the website interface</p>
+            </div>
+
+            <p></p>
+            <p>During the COVID-19 pandemic, I really got into Nintendo 3DS homebrew. I also got my wisdom teeth out
+              around then, and needed a game to play on my 3DS while recovering. I particularly loved the Fire Emblem
+              series, and I really got into Fire Emblem Echoes: Shadows of Valentia. I had already played the game as a
+              camp counselor at Camp Parsons about 3 years before, and I really enjoyed it my second time. After
+              finishing my playthrough, I decided to
+              dive deeper into the game's homebrew scene and I even joined a modding server!
+
+            </p>
+
+            <p>I enjoyed the homebrew scene, but I always hated how when you modded a game, you almost always have to
+              download some sketchy .rar with a windows .exe in it. In an effort to buck this trend, I built a web app
+              that generated a JSON that could sort of randomize the game through the Paragon editor for Fire Emblem echoes. The web app was 100%
+              built in vanilla JS, and exports a JSON that you download with no shady .exes. It isn't well written as I didn't have any formal
+              computer science or web development experience at this point. But for my personal use... it was a
+              success!! With some tinkering I played through a fully randomized campaign. I think that it's kind of silly that people are so particular about
+              whether your code meets a standard if you are coding something up for chiefly yourself. Sometimes it's fun to just hack together some code with no standards to make what you want!
+              <br>
+              <br>
+
+              It has been a long time since I worked on this project, and I have no idea if this still works since
+              Paragon may have updated itself and broken JSON compatibility. If you'd like to try it out, you can find it <a
+                href="https://evinjaff.github.io/FESOV-randomizer/">here</a>.
+              <br>
+
+            </p>
+
+
+            <br>
+            <br>
+
+
+
+            <h1><a name="ConnectionsButton"></a>Connections Button, <em>Fall 2017 - Winter 2019</em></h1>
+
+            <div class="photo">
+              <img src="./img/button.png">
+              <p>Picture of the IoT Buton, a phone that manages clicks from the button, and a poster for suicide
+                prevention</p>
+            </div>
+
+            <p></p>
+            <p>After losing a friend in my community to suicide, I wanted to find a way for technology to aid in suicide
+              prevention rather than being a force for evil. I initially wanted to make an Amazon Alexa integration that
+              would check in with a
+              student every night as a digital therapist. However, I later learned that year about Amazon's Internet of
+              Things (IoT) Dash Buttons that were the size of a keyfob, yet could connect to a server across the
+              internet.
+              The buttons were
+              resilient too and held a charge for nearly 2 years on a single AAA battery! Because of this amazing
+              hardware, I decided to switch to using Amazon's IoT button. I used AWS Lambda, AWS IoT, and Twilio to
+              relay
+              a distress signal to a crisis
+              hotline for the owner of a button in need of rapid assistance. I was interviewed by <a
+                href="https://bit.ly/k5evin">KING 5 News</a>, Seattle's local NBC affiliate, and interviewed by <a
+                href="https://bit.ly/evinbutton">Washington University
+                in St. Louis’ Engineering Magazine</a>. My invention was also featured in the University's Skandilaris
+              Center Creator's Gallery. I handed over the source code to the JED Foundation to work with (the foundation
+              handles college campus
+              suicide prevention for thousands of college campuses). </p>
+
+            <br>
+            <br>
+
+            <h1><a name="NFC"></a>NFC Marketing Case Study, <em>Summer 2018</em></h1>
+            <div class="photo">
+              <img src="./img/nfc.png">
+              <p>Picture of an NFC tag</p>
+            </div>
+            <p> The same Summer I developed my Connections Button, I became obsessed with NFC tags. I ordered a 100 pack
+              of NDEF-Encoded NFC tags from NXP Semiconductors, and after having some fun with using them for automating
+              tasks, I wanted to explore
+              why the technology saw decent consumer adoption in Europe but saw almost no consumer adoption in America.
+              It
+              turns out the historical reason for this is due to Apple's hesitation to add NFC support in the iPhone
+              models, while Europe has a
+              much higher share of Android devices that ship by default with full NFC support. However, with NFC support
+              coming to iPhones in early 2019 with the upgrading of <a
+                href="https://developer.apple.com/documentation/corenfc ">CoreNFC in iOS 13</a>, I wanted to experiment
+              and see where NFC might find usage. My first thought was with realtors or other low-volume, high-value
+              salespeople. I thought that
+              realtors could potentially benefit from a "smart" business card or simply an NFC emitter that
+              automatically
+              added their information to a client's phone as a contact. Due to how few clients realtors have and how
+              much
+              their clients spend, any
+              potential advantage in finding and retaining clients could be a literal million-dollar difference. And as
+              a
+              salesman, one of the biggest things they attempt is to get their name into a client's phone, something
+              that
+              NFC makes effortless.
+              Most android phones have "appless" NFC reading, which means that without needing to install an app, if an
+              NFC tag is near the phone's reader while it is unlocked, the data on the tag will be automatically
+              scanned,
+              meaning that an
+              NFC-enabled business card could be scanned without fumbling for an app on any phone with an NFC reader.
+              However, Apple does not support this, and has not showed plans to implement this as of 2022.</p>
+
+            <p>To experiment with this idea, I created several NFC tags and gave them to a luxury hairstylist, a Chanel
+              saleswoman, and a realtor. The reception was initially optimistic. However, in all cases, the product was
+              eventually rejected in
+              for their daily routine with the main reason being support. As previously mentioned, appless NFC reading
+              without installing an app is still on its way to being implemented on iOS despite the hardware being
+              present. This small case study
+              could be considered another example of Apple's mobile market share dictating the success of solutions such
+              as NFC. As an alternative to NFC, Apple has implemented native QR code reading in their camera app.</p>
+
+            <p>I later recycled this project into my final project for my Honors History class and for the project also
+              talked with realtors about the potential of this technology. I later took this project and wrote it up for
+              my final paper and
+              presentation for my Honors History class (which also included economics, which is what our final unit was
+              on).</p>
+          </p>
+
+
+          <br><br>
 
 
 
