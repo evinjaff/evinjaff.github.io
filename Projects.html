@@ -70,7 +70,6 @@
             replacement to existing surgical workflows</p>
         </div>
 
-
         <p>While a junior, I was invited to collaborate on a senior design project focused on urologic surgery. The
           client for the senior project, Dr. Nimrod at the Washington University School of Medicine, wanted a solution
           that could detect Iatrogenic Ureteral Injury during an operation. I worked with the team to come up with
@@ -81,37 +80,55 @@
           other intervention to signal that the scalpel should be removed.
 
           <br>
+
+
+          <blockquote class="twitter-tweet" data-dnt="true">
+            <p lang="en" dir="ltr">Very proud to have worked with these super stars from <a
+                href="https://twitter.com/WashUBME?ref_src=twsrc%5Etfw">@WashUBME</a> in the design of a novel ureteral
+              stent to prevent and/or better detect iatrogenic ureteral injuries… thank you for choosing me and <a
+                href="https://twitter.com/ChrisArett?ref_src=twsrc%5Etfw">@ChrisArett</a> <a
+                href="https://twitter.com/WashU_Uro?ref_src=twsrc%5Etfw">@WashU_Uro</a> as your clients, can’t wait to
+              see what comes next! <a href="https://t.co/wuNgtC2t1Z">pic.twitter.com/wuNgtC2t1Z</a></p>&mdash; Nimrod
+            Barashi, M.D. (@Uro_BarashiMD) <a
+              href="https://twitter.com/Uro_BarashiMD/status/1521175640539602947?ref_src=twsrc%5Etfw">May 2, 2022</a>
+          </blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
           <br>
 
-          <p>We are current prototyping a solution on an Arduino and plan to publish an open-source repository of the
-            microntroller code. We will also present a polished prototype at the end of the Spring 2022
-          semester. The project website can be found <a
-            href="https://sites.wustl.edu/bme401fall2021group10/project-overview/">here</a>.</p>
-
-        
-            <h1><a name="Javaduino"></a>Javaduino, <em>Spring 2022</em></h1>
-
-            <div class="photo">
-              <img src="./img/javaduino.png" width="100" alt="Javaduino Terminal Screenshot">
-              <p>Picture of the interpreter running an Arduino assembly file</p>
-            </div>
-    
-    
-            <p>For the final group project in CSE 237, I as well as another Sophomore and Junior decided to build an Arduino Assembly Interpreter written in Java.
-              CSE 237 is a class on programming tools and techniques, so one of the main intentions of the project was to adhere to clean code techniques and best practice planning and contribution 
-              models. This included the use of branching and pull requests, a Kanban board, code review, and external peer review. 
-            </p>
-
-            <p>The Arduino Assembly interpreter is able to take in a .S assembly file for the AVR instruction set (specifically for the Arduino Uno), and then
-              interprets the file and runs it through a virtual CPU to follow the instructions. By the end of the semester, we intend to have the interpreter able
-              to run assembly files containing basic arithmetic instructions, simple function calls, and branching. With extra time or if we work fast, we would also love to implement
-              a "rewind" function to step back assembly instructions, an option to pause/step execution and insert new assembly lines, and a virtual GPIO pin.
-            </p>
-    
-              <p>An in-progress repository of our team's project can be found   <a
-                  href="https://github.com/CSE237SP2022/project-viswanathan-jaff-rose">here</a>.</p>
+          <p>We will presented a polished prototype at the end of the Spring 2022
+            semester at Wash U's annual "BME Day". The project website summarizing our work can be found <a
+              href="https://sites.wustl.edu/bme401fall2021group10/project-overview/">here</a>.</p>
 
 
+          <h1><a name="Javaduino"></a>Javaduino, <em>Spring 2022</em></h1>
+
+          <div class="photo">
+            <img src="./img/javaduino.png" width="100" alt="Javaduino Terminal Screenshot">
+            <p>Picture of the interpreter running an AVR assembly file that computes the 6th fibonacci number</p>
+          </div>
+
+
+          <p>For the final group project in CSE 237, I as well as another Sophomore and Junior decided to build an
+            Arduino Assembly Interpreter written in Java.
+            CSE 237 is a class on programming tools and techniques, so one of the main intentions of the project was to
+            adhere to clean code techniques and best practice planning and contribution
+            models. This included the use of branching and pull requests, a Kanban board, code review, and external peer
+            review.
+          </p>
+
+          <p>The Arduino Assembly interpreter is able to take in a .S assembly file for the AVR instruction set
+            (specifically for the Arduino Uno), and then
+            interprets the file and runs it through a virtual CPU to follow the instructions. By the end of the
+            semester, we intend to have the interpreter able
+            to run assembly files containing basic arithmetic instructions, simple function calls, and branching. With
+            extra time.
+          </p>
+
+          <p>An repository of our team's completed project can be found <a
+              href="https://github.com/CSE237SP2022/project-viswanathan-jaff-rose">here</a>. Additionally, as a side
+            project this summer, I'm looking to rewrite a version of this in C as practice for my internship at Garmin
+            where I'll be writing a lot of C code.</p>
 
           <h1><a name="Speedrunsunchained"></a>Speedruns Unchained, <em>Spring 2022</em></h1>
 
@@ -132,9 +149,11 @@
 
             This one app, however, is actually two! There's a "community app" and a "game app." Both
             sites share a common database, and the community app is designed to build and filter out challenges in a
-            reddit-like forum, while the game uses the database to actually host the games. The app is open source and thus can be "off-the-grid," meaning that anyone who wants to host this
-            version of the app on their local network and keep their own SQLite game database could do that if say a streamer
-             wanted to use the app off-network to avoid low-quality submission on a stream.
+            reddit-like forum, while the game uses the database to actually host the games. The app is open source and
+            thus can be "off-the-grid," meaning that anyone who wants to host this
+            version of the app on their local network and keep their own SQLite game database could do that if say a
+            streamer
+            wanted to use the app off-network to avoid low-quality submission on a stream.
 
             <br>
             <br>
@@ -143,22 +162,78 @@
             not like Django. Well, I don't dislike Django specifically, it seems really powerful but I find it really
             confusing and inflexible. It seems like the framework is built for exactly one type of thing, and if your
             website doesn't want to do that one thing, you'll be stuck writing hundreds of custom functions to get basic
-            things working. In hindsight, I could've tried using Flask, Ruby on Rails, or Meteor, but I had reasons to be wary of each one. 
-            I didn't want to learn Ruby in addition to a new framework, I didn't want to be stuck in dependency hell for Flask, and Meteor
+            things working. In hindsight, I could've tried using Flask, Ruby on Rails, or Meteor, but I had reasons to
+            be wary of each one.
+            I didn't want to learn Ruby in addition to a new framework, I didn't want to be stuck in dependency hell for
+            Flask, and Meteor
             seemed a little too bleeding-edge for what I was doing.
             <br>
             <br>
             I built out the "game app" using my bread and butter, vanilla JS (with a little JQuery), Node.js, and
             Socket.io. I hosted a static server using Node.js and created a basic Socket.io backend to handle queries to
-            the SQLite database. Long-term, I am going to convert this JavaScript to TypeScript, just because that's
-            becoming the industry standard.
+            the SQLite database.
 
             <br>
             <br>
 
             The GitHub pages for the project can be found <a
               href="https://evinjaff.github.io/speedrunsunchained">here</a>. It's in early alpha right now, but I'm
-            hoping that this will eventually become a sweet open-source party game for you and your video-game loving friends to play!</p>
+            hoping that this will eventually become a sweet open-source party game for you and your video-game loving
+            friends to play!</p>
+
+          <h1><a name="PokedexTracker"></a>Pokedex Tracker, <em>Spring 2022</em></h1>
+
+          <div class="photo">
+            <img src="./img/pokedex.png" style='width: 150%;' alt="Voltob Flip Board">
+            <p>Picture of the website.</p>
+          </div>
+
+          <p></p>
+          <p>For my final project for CSE 204A (Frontend Web Development), we had to build a frontend-only website or
+            application using a RESTful API. Out of a need, I decided to build a
+            pokedex tracker using the PokeAPI because it's been my goal for a few summers to finish the National
+            Pokedex in Pokemon Soul Silver! With this tool, I can track my
+            progress as I finally complete my National Dex this Summer. Oh, and one more fun feature, the application
+            tracks your completion percentage, and has a share button
+            that composes a tweet for you that tells everyone how far you are in your progress to "catch 'em all!"</p>
+
+          <p>On the website, you can check off caught pokemon and hover over a pokemon to see how you can catch/evolve
+            it. The
+            app also tracks your progress with a JSON file, so the application is technically portable in the sense that
+            if you hold on to the exported JSON, you can keep your progress saved across platforms. This site is similar
+            in a lot of ways to my Fire Emblem Echos Randomizer, but I've come
+            at it with 1-2 years of wisdom. I used TypeScript instead of vanilla JS with a target
+            transpilation of ECMAScript 6. After one project, I'm a TypeScript convert; it is such a great resource for
+            catching errors and writing stable code. Second, I am using AJAX calls instead of a local database which
+            will
+            make the
+            site run slower but debloats the code and makes it more dynamic. Lastly, instead
+            of building a monolithic block of JavaScript code like with the Fire Emblem Echoes Randomizer, I used a
+            "clean code" style such
+            methods were minimized in length.</p>
+          <p>
+            Unfortunately, I still made some mistakes. I lost 10 points on the project because my
+            website made about 2,400 AJAX requests, which divided by the 493 pokemon means about 4.83 AJAX requests per
+            pokemon. Which makes sense considering that sprites, encounter, and evolution data needed to be obtained in
+            separate requests. I probably should have made the AJAX data for encounters happen on hover, but I still
+            needed at minimum 493 AJAX requests and 4 megabytes of data before the website was usable.</p>
+
+          <p>Ultimately, this kind of misstep is shows the pitfalls of frontend-only and the whole Web 2.0 no-backend
+            idea that use heavy JavaScript. It's fun to link stuff together, but performance suffers. If I had used
+            Django for this project and
+            stored the query in a SQLite database that updated its database from the PokeAPI every month, I would then
+            just use an
+            HTML template to load in new data. This would have been much more efficient, especially for an arguably
+            static
+            and small dataset to query from.
+          </p>
+
+
+
+          <p>The site can be found <a
+              href="https://wustlcse204.github.io/10-final-project-individual-evinjaff/">here</a>, and the final
+            codebase will be released pending approval from Professor Clapp.</p>
+          <br>
 
 
 
@@ -180,11 +255,11 @@
             This
             independent study gave us the chance to explore more complex algorithms involved in high-level
             simulation with limited knowledge as sophomores. </p>
-            
-            <br>
-            <br>
-            <p>The codebase can be found <a
-              href="https://github.com/abohrer23/IndependentStudy">here</a>, and the final paper can be found <a href="https://evinjaff.github.io/papers/VoltorbFlip.pdf">here</a></p>
+
+          <br>
+          <br>
+          <p>The codebase can be found <a href="https://github.com/abohrer23/IndependentStudy">here</a>, and the final
+            paper can be found <a href="https://evinjaff.github.io/papers/VoltorbFlip.pdf">here</a></p>
           <br>
           <br>
           <br>
@@ -197,7 +272,7 @@
 
           <div class="photo">
             <img src="./img/Bearzlet.png" width="100" alt="Picture of the Bearzlet interface">
-            <p>Picture of the Bearzlet interface. We chose some objectively ugly CSS on purpose.</p>
+            <p>Picture of the Bearzlet interface. We chose some ugly CSS.</p>
           </div>
 
           <p></p>
@@ -213,20 +288,24 @@
             <br>
             <br>
             <p>
-            The app was written using a diverse stack of languages and frameworks. The frontend was built using Vue.js,
-            and the page was compiled in Electronjs to build the website to a dedicated desktop binary. The backend of
-            the
-            application uses PHP and MongoDB to manage the data, and the frontend uses AJAX requests to get data from
-            the
-            frontend. As an aside, I love MongoDB. It is a beautiful way to run a
-            database. Though setting up the MongoDB PHP client with composer was annoying. Our application has been tested for
-            basic web security and is reasonably safe from SQL/Database Injection, XSS, CRSF forgery, and other well-known
-            penetration methods.
+              The app was written using a diverse stack of languages and frameworks. The frontend was built using
+              Vue.js,
+              and the page was compiled in Electronjs to build the website to a dedicated desktop binary. The backend of
+              the
+              application uses PHP and MongoDB to manage the data, and the frontend uses AJAX requests to get data from
+              the
+              frontend. As an aside, I love MongoDB. It is a beautiful way to run a
+              database. Though setting up the MongoDB PHP client with composer was annoying. Our application has been
+              tested for
+              basic web security and is reasonably safe from SQL/Database Injection, XSS, CRSF forgery, and other
+              well-known
+              penetration methods.
             </p>
             <br>
 
             <p>
-            A link to the GitHub repository with our project's code can be found <a name="FESOV" href="https://github.com/evinjaff/bearzlet">here.</a>
+              A link to the GitHub repository with our project's code can be found <a name="FESOV"
+                href="https://github.com/evinjaff/bearzlet">here.</a>
             </p>
             <br>
             <br>
@@ -245,40 +324,40 @@
               a
               team of friends and I got
               together and applied to compete in Johns Hopkins University's COVID-19 Design Challenge. We were accepted
-              and quickly got to work finding a problem to look at. We quickly settled on ventilation, specifically, the
+              and quickly got to work finding a problem to look at. We quickly settled on hospital infrastructure, specifically, the
               use of low-cost and widely
               available HEPA filtration units to create negative pressure rooms, a tool extremely important in
               preventing
-              the inter-patient spread of COVID-19. Negative pressure rooms were first used for invasive surgeries such
-              as
-              heart transplants to
-              reduce the spread of bacteria and other viruses and are used more ubiquitously today in controlling
-              contagious and deadly viruses in hospitals. HEPA units replace the existing expensive systems that induce
-              negative pressure but are less
-              accurate in maintaining negative pressure. Normally, there is little need to have more than 2-5 negative
+              the spread of COVID-19 in hospitals. </p>
+              
+              <p>Negative pressure rooms were first used for highly invasive and contamination-prone surgeries like heart transplants to
+              reduce the spread of bacteria and viruses. Negative pressure rooms have been slowly expanded in hospitals for sterile environments. When the COVID-19 pandemic started, HEPA units were proposed to supplement the existing expensive systems that induce
+              negative pressure which were overloaded.  Normally, there is little need to have more than 2-8 negative
               pressure rooms per hospital, but with the rise of COVID-19, the demand for negative pressure rooms
-              skyrocketed for patients with
-              immunocompromised or non-elective surgeries who would die otherwise if they contracted COVID-19 as well as
-              for COVID-19 patients. With the high cost of negative filters, the solution of HEPA units emerges.
+              skyrocketed for patients who were immunocompromised or undergoing non-elective surgeries who were at a much higher risk of death from COVID-19 contamination as well as
+              for the numerous COVID-19 patients to contain the spread of COVID-19 in hospitals. 
+              </p>
+              <p>
+              With the high cost of negative pressure rooms, the solution of HEPA units emerges. They can filter air almost as well as expensive negative pressure equipment, and can easily be set up in converted hospitals such as Governor Cuomo's "COVID Hotels" in New York for overflow patients.
               However,
               these units are
               inexpensive for a reason; they often require a nurse to check the unit every couple of hours to verify
               that
-              the unit is still maintaining negative pressure. With the already high workload that nurses face, any
+              the unit is maintaining negative pressure and correct the settings if it's not. With the already high workload nurses face, any
               extra
-              work could have a
-              devastating effect on a nurse's ability to work so we sprang into action to design a device that monitors
-              the HEPA filtration unit. With our remote situation, I didn't have direct access to a HEPA filter, so as
-              the
-              engineer on the team, I
-              took a raspberry pi and mimic a peripheral sensor using a microphone to simulate high and low voltages as
-              a
-              sensor might return. This allowed our group to construct a negative feedback loop and then design a
+              work might have a
+              devastating effect on a nurse's job so we sprang into action to design a device that monitors
+              the HEPA filtration unit. </p>
+              
+              <p>With our remote situation, I didn't have direct access to a HEPA unit for testing, so as
+              the engineer on the team, I
+              took a raspberry pi and mimicked a virtual sensor using a USB microphone that had a similar protocol to a USB pressure sensor.
+              This allowed our group to construct a negative feedback loop and then design a
               management system that would
               allow a single Raspberry Pi to control multiple negative pressure rooms. Our invention was well-received,
-              and we even had our team's work published in <a href="https://bit.ly/jhu-covid">Washington University's
+              and we even had our team's work reported in <a href="https://bit.ly/jhu-covid">Washington University's
                 Engineering Magazine</a> with
-              2 other Washington University teams.</p>
+              2 other Washington University teams competing in the challenge.</p>
             <br>
 
             <h1><a name="FESOV"></a>Fire Emblem Echoes Randomizer <em>Spring/Summer 2020</em></h1>
@@ -300,17 +379,21 @@
 
             <p>I enjoyed the homebrew scene, but I always hated how when you modded a game, you almost always have to
               download some sketchy .rar with a windows .exe in it. In an effort to buck this trend, I built a web app
-              that generated a JSON that could sort of randomize the game through the Paragon editor for Fire Emblem echoes. The web app was 100%
-              built in vanilla JS, and exports a JSON that you download with no shady .exes. It isn't well written as I didn't have any formal
+              that generated a JSON that could sort of randomize the game through the Paragon editor for Fire Emblem
+              echoes. The web app was 100%
+              built in vanilla JS, and exports a JSON that you download with no shady .exes. It isn't well written as I
+              didn't have any formal
               computer science or web development experience at this point. But for my personal use... it was a
-              success!! With some tinkering I played through a fully randomized campaign. I think that it's kind of silly that people are so particular about
-              whether your code meets a standard if you are coding something up for chiefly yourself. Sometimes it's fun to just hack together some code with no standards to make what you want!
+              success!! With some tinkering I played through a fully randomized campaign. I think that it's kind of
+              silly that people are so particular about
+              whether your code meets a standard if you are coding something up for chiefly yourself. Sometimes it's fun
+              to just hack together some code with no standards to make what you want!
               <br>
               <br>
 
               It has been a long time since I worked on this project, and I have no idea if this still works since
-              Paragon may have updated itself and broken JSON compatibility. If you'd like to try it out, you can find it <a
-                href="https://evinjaff.github.io/FESOV-randomizer/">here</a>.
+              Paragon may have updated itself and since broken JSON compatibility. If you'd like to try it out, you can find
+              it <a href="https://evinjaff.github.io/FESOV-randomizer/">here</a>.
               <br>
 
             </p>
@@ -333,21 +416,26 @@
             <p>After losing a friend in my community to suicide, I wanted to find a way for technology to aid in suicide
               prevention rather than being a force for evil. I initially wanted to make an Amazon Alexa integration that
               would check in with a
-              student every night as a digital therapist. However, I later learned that year about Amazon's Internet of
-              Things (IoT) Dash Buttons that were the size of a keyfob, yet could connect to a server across the
-              internet.
-              The buttons were
-              resilient too and held a charge for nearly 2 years on a single AAA battery! Because of this amazing
-              hardware, I decided to switch to using Amazon's IoT button. I used AWS Lambda, AWS IoT, and Twilio to
+              student every night as a digital therapist. I quickly realized that this was a bad idea and that people
+              don't want to talk to tell a robot how they're doing.</p>
+
+            <p>I was worried that my idea had hit a dead end. But when it seemed like I had nothing, I learned about Amazon's Internet of
+              Things (IoT) Dash Buttons that were the size of a keyfob, but had wifi and could connect to a server across the
+              internet. The buttons even held a charge for nearly 2 years on a single AAA battery! Because of this amazing
+              hardware, I decided to switch to using Amazon's IoT button. </p>
+              
+              <p>I used AWS Lambda, AWS IoT, and Twilio to
               relay
               a distress signal to a crisis
-              hotline for the owner of a button in need of rapid assistance. I was interviewed by <a
+              hotline telling them that a user in need of rapid assistance. I was interviewed by <a
                 href="https://bit.ly/k5evin">KING 5 News</a>, Seattle's local NBC affiliate, and interviewed by <a
                 href="https://bit.ly/evinbutton">Washington University
                 in St. Louis' Engineering Magazine</a>. My invention was also featured in the University's Skandilaris
               Center Creator's Gallery. I handed over the source code to the JED Foundation to work with (the foundation
               handles college campus
               suicide prevention for thousands of college campuses). </p>
+              
+              <p>An employee of AT&T also caught wind of my project. He was impressed with my work, and shipped me a copy of their version of the IoT button to play with. Their version works over the LTE network instead of WiFi, which means near 99% coverage of the US and rock-solid reliability for a crisis response device. When I'm out of college and have more time, I hope to pick up the project again because it's become even more necessary in the years since I started it. </p>
 
             <br>
             <br>
@@ -402,7 +490,7 @@
               on).</p>
 
 
-          <br><br>
+            <br><br>
 
 
 
@@ -412,6 +500,7 @@
         <p><a href="#SeniorDesign">Senior Design</a></p>
         <p><a href="#Javaduino">Javaduino</a></p>
         <p><a href="#Speedrunsunchained">Speedrunsunchained</a></p>
+        <p><a href="#PokedexTracker">Pokedex Tracker</a></p>
         <p><a href="#IndependentStudy">Independent Study</a></p>
         <p><a href="#Bearzlet">Bearzlet</a></p>
         <p><a href="#JHU">Smart HEPA Filters for COVID-19</a></p>
