@@ -128,7 +128,7 @@
           <p>An repository of our team's completed project can be found <a
               href="https://github.com/CSE237SP2022/project-viswanathan-jaff-rose">here</a>. Additionally, as a side
             project this summer, I'm looking to rewrite a version of this in C as practice for my internship at Garmin
-            where I'll be writing a lot of C code.</p>
+            where I have to write a lot of C code.</p>
 
           <h1><a name="Speedrunsunchained"></a>Speedruns Unchained, <em>Spring 2022</em></h1>
 
@@ -200,32 +200,36 @@
           <p>On the website, you can check off caught pokemon and hover over a pokemon to see how you can catch/evolve
             it. The
             app also tracks your progress with a JSON file, so the application is technically portable in the sense that
-            if you hold on to the exported JSON, you can keep your progress saved across platforms. This site is similar
-            in a lot of ways to my Fire Emblem Echos Randomizer, but I've come
-            at it with 1-2 years of wisdom. I used TypeScript instead of vanilla JS with a target
-            transpilation of ECMAScript 6. After one project, I'm a TypeScript convert; it is such a great resource for
+            if you hold on to the exported JSON, you can keep your progress saved. This site is similar
+            in a lot of ways to my Fire Emblem Echos Randomizer I built, but I've come
+            at it with 1-2 years of wisdom. For example, I used TypeScript instead of vanilla JS with a target
+            transpilation of ECMAScript 6 for maintainability. After one project, I'm a TypeScript convert; it is such a
+            great resource for
             catching errors and writing stable code. Second, I am using AJAX calls instead of a local database which
             will
             make the
-            site run slower but debloats the code and makes it more dynamic. Lastly, instead
+            site run slower but de-bloats the code and makes it more dynamic. Lastly, instead
             of building a monolithic block of JavaScript code like with the Fire Emblem Echoes Randomizer, I used a
-            "clean code" style such
-            methods were minimized in length.</p>
+            "clean code" style such that many smaller methods were used when possible.</p>
           <p>
             Unfortunately, I still made some mistakes. I lost 10 points on the project because my
             website made about 2,400 AJAX requests, which divided by the 493 pokemon means about 4.83 AJAX requests per
-            pokemon. Which makes sense considering that sprites, encounter, and evolution data needed to be obtained in
-            separate requests. I probably should have made the AJAX data for encounters happen on hover, but I still
-            needed at minimum 493 AJAX requests and 4 megabytes of data before the website was usable.</p>
+            pokemon. Which makes sense considering that sprites, encounter, and evolution data each needed to be
+            obtained in
+            separate requests. I probably should have made the AJAX data for encounters happen upon request, but I still
+            would have needed at minimum 493 AJAX requests and 4 megabytes of data to load the website, and it would
+            have only saved me around 4-5 megabytes of data but admittedly 1600 less AJAX requests that could be
+            performed after the site loaded.</p>
 
-          <p>Ultimately, this kind of misstep is shows the pitfalls of frontend-only and the whole Web 2.0 no-backend
-            idea that use heavy JavaScript. It's fun to link stuff together, but performance suffers. If I had used
+          <p>Ultimately, a project like this shows the pitfalls of deploying without servers and really the whole Web
+            2.0 no-backend
+            idea that leaves us with heavy JS websites that perform poorly. It's fun to use APIs, link stuff together,
+            and not have to pay AWS, but you get projects like these. If I had used
             Django for this project and
-            stored the query in a SQLite database that updated its database from the PokeAPI every month, I would then
-            just use an
-            HTML template to load in new data. This would have been much more efficient, especially for an arguably
-            static
-            and small dataset to query from.
+            stored the query in a SQLite database that updated its records from the PokeAPI every month, I could use an
+            HTML template to render HTML views on the server-side and provide a lighter front-end experience. This would
+            have been much more efficient, especially for an arguably
+            static and small dataset like Pokemon.
           </p>
 
 
@@ -324,34 +328,43 @@
               a
               team of friends and I got
               together and applied to compete in Johns Hopkins University's COVID-19 Design Challenge. We were accepted
-              and quickly got to work finding a problem to look at. We quickly settled on hospital infrastructure, specifically, the
+              and quickly got to work finding a problem to look at. We quickly settled on hospital infrastructure,
+              specifically, the
               use of low-cost and widely
               available HEPA filtration units to create negative pressure rooms, a tool extremely important in
               preventing
               the spread of COVID-19 in hospitals. </p>
-              
-              <p>Negative pressure rooms were first used for highly invasive and contamination-prone surgeries like heart transplants to
-              reduce the spread of bacteria and viruses. Negative pressure rooms have been slowly expanded in hospitals for sterile environments. When the COVID-19 pandemic started, HEPA units were proposed to supplement the existing expensive systems that induce
-              negative pressure which were overloaded.  Normally, there is little need to have more than 2-8 negative
+
+            <p>Negative pressure rooms were first used for highly invasive and contamination-prone surgeries like heart
+              transplants to
+              reduce the spread of bacteria and viruses. Negative pressure rooms have been slowly expanded in hospitals
+              for sterile environments. When the COVID-19 pandemic started, HEPA units were proposed to supplement the
+              existing expensive systems that induce
+              negative pressure which were overloaded. Normally, there is little need to have more than 2-8 negative
               pressure rooms per hospital, but with the rise of COVID-19, the demand for negative pressure rooms
-              skyrocketed for patients who were immunocompromised or undergoing non-elective surgeries who were at a much higher risk of death from COVID-19 contamination as well as
-              for the numerous COVID-19 patients to contain the spread of COVID-19 in hospitals. 
-              </p>
-              <p>
-              With the high cost of negative pressure rooms, the solution of HEPA units emerges. They can filter air almost as well as expensive negative pressure equipment, and can easily be set up in converted hospitals such as Governor Cuomo's "COVID Hotels" in New York for overflow patients.
+              skyrocketed for patients who were immunocompromised or undergoing non-elective surgeries who were at a
+              much higher risk of death from COVID-19 contamination as well as
+              for the numerous COVID-19 patients to contain the spread of COVID-19 in hospitals.
+            </p>
+            <p>
+              With the high cost of negative pressure rooms, the solution of HEPA units emerges. They can filter air
+              almost as well as expensive negative pressure equipment, and can easily be set up in converted hospitals
+              such as Governor Cuomo's "COVID Hotels" in New York for overflow patients.
               However,
               these units are
               inexpensive for a reason; they often require a nurse to check the unit every couple of hours to verify
               that
-              the unit is maintaining negative pressure and correct the settings if it's not. With the already high workload nurses face, any
+              the unit is maintaining negative pressure and correct the settings if it's not. With the already high
+              workload nurses face, any
               extra
               work might have a
               devastating effect on a nurse's job so we sprang into action to design a device that monitors
               the HEPA filtration unit. </p>
-              
-              <p>With our remote situation, I didn't have direct access to a HEPA unit for testing, so as
+
+            <p>With our remote situation, I didn't have direct access to a HEPA unit for testing, so as
               the engineer on the team, I
-              took a raspberry pi and mimicked a virtual sensor using a USB microphone that had a similar protocol to a USB pressure sensor.
+              took a raspberry pi and mimicked a virtual sensor using a USB microphone that had a similar protocol to a
+              USB pressure sensor.
               This allowed our group to construct a negative feedback loop and then design a
               management system that would
               allow a single Raspberry Pi to control multiple negative pressure rooms. Our invention was well-received,
@@ -383,114 +396,118 @@
               echoes. The web app was 100%
               built in vanilla JS, and exports a JSON that you download with no shady .exes. It isn't well written as I
               didn't have any formal
-              computer science or web development experience at this point. But for my personal use... it was a
-              success!! With some tinkering I played through a fully randomized campaign. I think that it's kind of
-              silly that people are so particular about
-              whether your code meets a standard if you are coding something up for chiefly yourself. Sometimes it's fun
-              to just hack together some code with no standards to make what you want!
-              <br>
-              <br>
-
-              It has been a long time since I worked on this project, and I have no idea if this still works since
-              Paragon may have updated itself and since broken JSON compatibility. If you'd like to try it out, you can find
-              it <a href="https://evinjaff.github.io/FESOV-randomizer/">here</a>.
-              <br>
-
-            </p>
-
-
+              computer science or web development experience at this point outside of one high school class. But for my
+              personal use it worked. With some tinkering I played through a fully randomized campaign. </p>
             <br>
             <br>
 
-
-
-            <h1><a name="ConnectionsButton"></a>Connections Button, <em>Fall 2017 - Winter 2019</em></h1>
-
-            <div class="photo">
-              <img src="./img/button.png" alt="Photo of the Button">
-              <p>Picture of the IoT Button, a phone that manages clicks from the button, and a poster for suicide
-                prevention</p>
-            </div>
-
-            <p></p>
-            <p>After losing a friend in my community to suicide, I wanted to find a way for technology to aid in suicide
-              prevention rather than being a force for evil. I initially wanted to make an Amazon Alexa integration that
-              would check in with a
-              student every night as a digital therapist. I quickly realized that this was a bad idea and that people
-              don't want to talk to tell a robot how they're doing.</p>
-
-            <p>I was worried that my idea had hit a dead end. But when it seemed like I had nothing, I learned about Amazon's Internet of
-              Things (IoT) Dash Buttons that were the size of a keyfob, but had wifi and could connect to a server across the
-              internet. The buttons even held a charge for nearly 2 years on a single AAA battery! Because of this amazing
-              hardware, I decided to switch to using Amazon's IoT button. </p>
-              
-              <p>I used AWS Lambda, AWS IoT, and Twilio to
-              relay
-              a distress signal to a crisis
-              hotline telling them that a user in need of rapid assistance. I was interviewed by <a
-                href="https://bit.ly/k5evin">KING 5 News</a>, Seattle's local NBC affiliate, and interviewed by <a
-                href="https://bit.ly/evinbutton">Washington University
-                in St. Louis' Engineering Magazine</a>. My invention was also featured in the University's Skandilaris
-              Center Creator's Gallery. I handed over the source code to the JED Foundation to work with (the foundation
-              handles college campus
-              suicide prevention for thousands of college campuses). </p>
-              
-              <p>An employee of AT&T also caught wind of my project. He was impressed with my work, and shipped me a copy of their version of the IoT button to play with. Their version works over the LTE network instead of WiFi, which means near 99% coverage of the US and rock-solid reliability for a crisis response device. When I'm out of college and have more time, I hope to pick up the project again because it's become even more necessary in the years since I started it. </p>
-
-            <br>
+            It has been a long time since I worked on this project, and I have no idea if this still works since
+            Paragon may have updated itself and since broken JSON compatibility. If you'd like to try it out, you can
+            find
+            it <a href="https://evinjaff.github.io/FESOV-randomizer/">here</a>.
             <br>
 
-            <h1><a name="NFC"></a>NFC Marketing Case Study, <em>Summer 2018</em></h1>
-            <div class="photo">
-              <img src="./img/nfc.png" alt="Photo of an NFC Tag">
-              <p>Picture of an NFC tag</p>
-            </div>
-            <p> The same Summer I developed my Connections Button, I became obsessed with NFC tags. I ordered a 100 pack
-              of NDEF-Encoded NFC tags from NXP Semiconductors, and after having some fun with using them for automating
-              tasks, I wanted to explore
-              why the technology saw decent consumer adoption in Europe but saw almost no consumer adoption in America.
-              It
-              turns out the historical reason for this is due to Apple's hesitation to add NFC support in the iPhone
-              models, while Europe has a
-              much higher share of Android devices that ship by default with full NFC support. However, with NFC support
-              coming to iPhones in early 2019 with the upgrading of <a
-                href="https://developer.apple.com/documentation/corenfc ">CoreNFC in iOS 13</a>, I wanted to experiment
-              and see where NFC might find usage. My first thought was with realtors or other low-volume, high-value
-              salespeople. I thought that
-              realtors could potentially benefit from a "smart" business card or simply an NFC emitter that
-              automatically
-              added their information to a client's phone as a contact. Due to how few clients realtors have and how
-              much
-              their clients spend, any
-              potential advantage in finding and retaining clients could be a literal million-dollar difference. And as
-              a
-              salesman, one of the biggest things they attempt is to get their name into a client's phone, something
-              that
-              NFC makes effortless.
-              Most android phones have "appless" NFC reading, which means that without needing to install an app, if an
-              NFC tag is near the phone's reader while it is unlocked, the data on the tag will be automatically
-              scanned,
-              meaning that an
-              NFC-enabled business card could be scanned without fumbling for an app on any phone with an NFC reader.
-              However, Apple does not support this, and has not showed plans to implement this as of 2022.</p>
-
-            <p>To experiment with this idea, I created several NFC tags and gave them to a luxury hairstylist, a Chanel
-              saleswoman, and a realtor. The reception was initially optimistic. However, in all cases, the product was
-              eventually rejected in
-              for their daily routine with the main reason being support. As previously mentioned, appless NFC reading
-              without installing an app is still on its way to being implemented on iOS despite the hardware being
-              present. This small case study
-              could be considered another example of Apple's mobile market share dictating the success of solutions such
-              as NFC. As an alternative to NFC, Apple has implemented native QR code reading in their camera app.</p>
-
-            <p>I later recycled this project into my final project for my Honors History class and for the project also
-              talked with realtors about the potential of this technology. I later took this project and wrote it up for
-              my final paper and
-              presentation for my Honors History class (which also included economics, which is what our final unit was
-              on).</p>
+          </p>
 
 
-            <br><br>
+          <br>
+          <br>
+
+
+
+          <h1><a name="ConnectionsButton"></a>Connections Button, <em>Fall 2017 - Winter 2019</em></h1>
+
+          <div class="photo">
+            <img src="./img/button.png" alt="Photo of the Button">
+            <p>Picture of the IoT Button, a phone that manages clicks from the button, and a poster for suicide
+              prevention</p>
+          </div>
+
+          <p></p>
+          <p>After losing a friend in my community to suicide, I wanted to find a way for technology to aid in suicide
+            prevention rather than being a force for evil. I initially wanted to make an Amazon Alexa integration that
+            would check in with a
+            student every night as a digital therapist. I quickly realized that this was a bad idea and that people
+            don't want to talk to tell a robot how they're doing.</p>
+
+          <p>I was worried that my idea had hit a dead end. But when it seemed like I had nothing, I learned about
+            Amazon's Internet of
+            Things (IoT) Dash Buttons that were the size of a keyfob, but had wifi and could connect to a server across
+            the
+            internet. The buttons even held a charge for nearly 2 years on a single AAA battery! Because of this amazing
+            hardware, I decided to switch to using Amazon's IoT button. </p>
+
+          <p>I used AWS Lambda, AWS IoT, and Twilio to
+            relay
+            a distress signal to a crisis
+            hotline telling them that a user in need of rapid assistance. I was interviewed by <a
+              href="https://bit.ly/k5evin">KING 5 News</a>, Seattle's local NBC affiliate, and interviewed by <a
+              href="https://bit.ly/evinbutton">Washington University
+              in St. Louis' Engineering Magazine</a>. My invention was also featured in the University's Skandilaris
+            Center Creator's Gallery. I handed over the source code to the JED Foundation to work with (the foundation
+            handles college campus
+            suicide prevention for thousands of college campuses). </p>
+
+          <p>An employee of AT&T also caught wind of my project. He was impressed with my work, and shipped me a copy of
+            their version of the IoT button to play with. Their version works over the LTE network instead of WiFi,
+            which means near 99% coverage of the US and rock-solid reliability for a crisis response device. When I'm
+            out of college and have more time, I hope to pick up the project again because it's become even more
+            necessary in the years since I started it. </p>
+
+          <br>
+          <br>
+
+          <h1><a name="NFC"></a>NFC Marketing Case Study, <em>Summer 2018</em></h1>
+          <div class="photo">
+            <img src="./img/nfc.png" alt="Photo of an NFC Tag">
+            <p>Picture of an NFC tag</p>
+          </div>
+          <p> The same Summer I developed my Connections Button, I became obsessed with NFC tags. I ordered a 100 pack
+            of NDEF-Encoded NFC tags from NXP Semiconductors, and after having some fun with using them for automating
+            tasks, I wanted to explore
+            why the technology saw decent consumer adoption in Europe but saw almost no consumer adoption in America.
+            It
+            turns out the historical reason for this is due to Apple's hesitation to add NFC support in the iPhone
+            models, while Europe has a
+            much higher share of Android devices that ship by default with full NFC support. However, with NFC support
+            coming to iPhones in early 2019 with the upgrading of <a
+              href="https://developer.apple.com/documentation/corenfc ">CoreNFC in iOS 13</a>, I wanted to experiment
+            and see where NFC might find usage. My first thought was with realtors or other low-volume, high-value
+            salespeople. I thought that
+            realtors could potentially benefit from a "smart" business card or simply an NFC emitter that
+            automatically
+            added their information to a client's phone as a contact. Due to how few clients realtors have and how
+            much
+            their clients spend, any
+            potential advantage in finding and retaining clients could be a literal million-dollar difference. And as
+            a
+            salesman, one of the biggest things they attempt is to get their name into a client's phone, something
+            that
+            NFC makes effortless.
+            Most android phones have "appless" NFC reading, which means that without needing to install an app, if an
+            NFC tag is near the phone's reader while it is unlocked, the data on the tag will be automatically
+            scanned,
+            meaning that an
+            NFC-enabled business card could be scanned without fumbling for an app on any phone with an NFC reader.
+            However, Apple does not support this, and has not showed plans to implement this as of 2022.</p>
+
+          <p>To experiment with this idea, I created several NFC tags and gave them to a luxury hairstylist, a Chanel
+            saleswoman, and a realtor. The reception was initially optimistic. However, in all cases, the product was
+            eventually rejected in
+            for their daily routine with the main reason being support. As previously mentioned, appless NFC reading
+            without installing an app is still on its way to being implemented on iOS despite the hardware being
+            present. This small case study
+            could be considered another example of Apple's mobile market share dictating the success of solutions such
+            as NFC. As an alternative to NFC, Apple has implemented native QR code reading in their camera app.</p>
+
+          <p>I later recycled this project into my final project for my Honors History class and for the project also
+            talked with realtors about the potential of this technology. I later took this project and wrote it up for
+            my final paper and
+            presentation for my Honors History class (which also included economics, which is what our final unit was
+            on).</p>
+
+
+          <br><br>
 
 
 
