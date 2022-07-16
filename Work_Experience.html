@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Evin Jaff - Experience</title>
   <link rel="stylesheet" href="./support/lumen-boostrap.min.css">
-  <script src="./support/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="./support/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="./support/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="./support/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
   <link rel="stylesheet" href="./support/home.css">
   <link rel="stylesheet" href="./support/styles.css">
   <link rel="stylesheet" href="./support/navbar.css">
@@ -26,7 +29,8 @@
 
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -58,15 +62,60 @@
     <div class="row">
       <div class="col-sm-12">
 
+        <h1>Garmin, <em>Olathe Biosensor Team Intern, Summer 2021</em></h1>
+
+        <div class="photo">
+          <img src="./img/pressurewave.png">
+          <p>A diagram of a traditional pressure waveform measured by a blood pressure cuff</p>
+        </div>
+
+        <p>Currently interning for Garmin as a member of the Biosensor team at their main Olathe campus. The team is
+          relatively new
+          and was formed as part of a new subdivision called Garmin Health. As an intern, worked under
+          the supervision of a mentor on exploratory signal analysis to see if blood pressure could be estimated using
+          the existing gen 5 sensor arrays found on most Garmin smartwatches. Current gen 5 sensors use
+          photoplethysmography to detect measurements like heart rate with green LEDs that emit light around
+          the 550 nm wavelength. Additionally, infrared lights also exist on the watch, but are infrequently used due to
+          the high
+          power draw and only measure SPO2. For this project, we extracted signal readings from both green LED and infrared
+          watches and built
+          a machine learning pipeline to study and analyze the signal. </p>
+
+        <p>The optical signal shares some properties with a pressure waveform obtained from a blood pressure
+          cuff (the left diagram shows a waveform) but the optical measurement of an absorbance spectrum from firing green light at an artery
+          presents issues in reliability and is why blood pressure cuffs are how blood pressure is measured. </p>
+          
+          <p>Notable competitors in the space such as Apple,
+          Samsung, and Withings have had meddling success attempting a similar project, with only Samsung having mild
+          success
+          releasing <a
+            href="https://www.theverge.com/2021/9/16/22677381/smartwatch-blood-pressure-samsung-fitbit-apple">blood
+            pressure detection in the asian markets</a>, but not into the North American or
+          European markets where regulations tend to be stricter.</p>
+
+        <p>Interns aren't meant to crack potentially million-dollar product features, but at this current moment, my
+          project has made some progress and I hope that some of my code could be ship in future Garmin
+          products.</p>
+
         <h1>Washington University School of Medicine, <em>Undergraduate Researcher, Summer 2021</em></h1>
 
         <div class="photo">
           <img src="./img/chenlab.png">
-            <p>Photo of the interface scoring a sleep experiment</p>
+          <p>Photo of the interface scoring a sleep experiment</p>
         </div>
 
-        <p>Researcher at the Chen Lab at the Washington University School of Medicine studying sleep in lab mice. As an undergraduate researcher, I developed and maintained a tool to analyze and mice sleep to different states (REM, NREM, etc). Using a barebone framework from a grad student at the lab, I added additional functionality to the software. New features included a versioning system to track model changes and overtraining, giving the model the ability to identify a new state called "quiet wakefullness" to better classify intermediate states of wakefullness, and the ability to dynamically click on a spectrogram and see detailed LFP, EMG, Delta, and Theta signals to closely analyze problem areas the model couldn't identify. In addition to maintaining these features, I became an active member of the lab and attended biweekly journal clubs where I learned and discussed academic papers on various neuromodulation topics.</p>
-        <p>The project continues to be maintained by the lab since I stopped working there, and a link to the GitHub repository can be found <a rel="noopener noreferrer" target="_blank" href="https://github.com/YaoChenLab/neuroscience_sleep_scoring">here</a></p>
+        <p>Researcher at the Chen Lab at the Washington University School of Medicine studying sleep in lab mice. As an
+          undergraduate researcher, I developed and maintained a tool to analyze and mice sleep to different states
+          (REM, NREM, etc). Using a barebone framework from a grad student at the lab, I added additional functionality
+          to the software. New features included a versioning system to track model changes and overtraining, giving the
+          model the ability to identify a new state called "quiet wakefullness" to better classify intermediate states
+          of wakefullness, and the ability to dynamically click on a spectrogram and see detailed LFP, EMG, Delta, and
+          Theta signals to closely analyze problem areas the model couldn't identify. In addition to maintaining these
+          features, I became an active member of the lab and attended biweekly journal clubs where I learned and
+          discussed academic papers on various neuromodulation topics.</p>
+        <p>The project continues to be maintained by the lab since I stopped working there, and a link to the GitHub
+          repository can be found <a rel="noopener noreferrer" target="_blank"
+            href="https://github.com/YaoChenLab/neuroscience_sleep_scoring">here</a></p>
         <br>
         <br>
         <h1>Washington University in St. Louis, <em>Teaching Assistant, Spring 2020-Present</em></h1>
@@ -78,11 +127,16 @@
         <h1>Department of Defense: Project Tesseract, <em>Intern, Summer 2020</em></h1>
 
         <p>
-          Project Tesseract is an effort by the United States Department of Defense to gain insights from recruited fellows in academia on emerging fields and for the fellows to work on projects related to the research of emerging technologies.</p>
+          Project Tesseract is an effort by the United States Department of Defense to gain insights from recruited
+          fellows in academia on emerging fields and for the fellows to work on projects related to the research of
+          emerging technologies.</p>
 
         <p>
-          While an unpaid fellow, I prototyped a vending system for tools to accelerate the speed of maintenance operations on a military base's Flightline. I also worked on a sub-team to develop a system to allow for autonomous robots to operate
-          inside a hangar among humans similar to Amazon fulfillment centers. I also presented a report of the robot system to Brigadier General Linda Hurry, where it was positively received. </p>
+          While an unpaid fellow, I prototyped a vending system for tools to accelerate the speed of maintenance
+          operations on a military base's Flightline. I also worked on a sub-team to develop a system to allow for
+          autonomous robots to operate
+          inside a hangar among humans similar to Amazon fulfillment centers. I also presented a report of the robot
+          system to Brigadier General Linda Hurry, where it was positively received. </p>
 
         <h1>OsteoPOP, <em>Engineering Lead, Fall-Spring 2019-2020</em></h1>
 
@@ -91,15 +145,29 @@
           <p>Diagram from the provisional patent</p>
         </div>
 
-        <p>OsteoPOP was a student startup led by Biomedical Engineering Ph.D. student Ian Berke. OsteoPOP focused on finding a solution to the low compliance rate of bisphosphonate medications prescribed to elderly women for the treatment of
+        <p>OsteoPOP was a student startup led by Biomedical Engineering Ph.D. student Ian Berke. OsteoPOP focused on
+          finding a solution to the low compliance rate of bisphosphonate medications prescribed to elderly women for
+          the treatment of
           Osteoporosis. </p>
-        <p>Our team spaned a wide array of disciplines, including students skilled in Biomedical Engineering like Ian and I, an Electrical and Systems Engineering Student proficient in sensors, two Economics Ph.D. students studying incentives, and
+        <p>Our team spaned a wide array of disciplines, including students skilled in Biomedical Engineering like Ian
+          and I, an Electrical and Systems Engineering Student proficient in sensors, two Economics Ph.D. students
+          studying incentives, and
           MBA students studying the market of a potential solution. </p>
-        <p>Our solution was a device with an optional pack-in application that tracked compliance and educated the user on the importance of their medication as well as auto-requested a prescription refill for them if they consented to it. As an
-          Engineering Lead, I managed the development schedule and still worked as an engineer helping with the development of a prototype, which included microcontroller programming, Computer-Aided Design (CAD), and App Development. Our final result
-          was simple, yet effective; a pill cap sensor that was equipped with a LIDAR sensor and 3D Dot Projection that could estimate the number of pills left in the bottle accurately enough to determine whether a medication was taken and if a
-          refill would soon be required. The resulting device was filed for a <a href="https://evinjaff.github.io/papers/Berke,%20Jaff,%20Martin%20-%202020.pdf">provisional patent co-authored by Evin Jaff, Ian Berke, and Caleb Martin</a> (the three
-          main students working on prototyping the device). The prototype was presented at multiple entrepreneurship events, including TigerLaunch, and Washington University's Olin School of Business' Idea Bounce where it was a finalist in both. The
+        <p>Our solution was a device with an optional pack-in application that tracked compliance and educated the user
+          on the importance of their medication as well as auto-requested a prescription refill for them if they
+          consented to it. As an
+          Engineering Lead, I managed the development schedule and still worked as an engineer helping with the
+          development of a prototype, which included microcontroller programming, Computer-Aided Design (CAD), and App
+          Development. Our final result
+          was simple, yet effective; a pill cap sensor that was equipped with a LIDAR sensor and 3D Dot Projection that
+          could estimate the number of pills left in the bottle accurately enough to determine whether a medication was
+          taken and if a
+          refill would soon be required. The resulting device was filed for a <a
+            href="https://evinjaff.github.io/papers/Berke,%20Jaff,%20Martin%20-%202020.pdf">provisional patent
+            co-authored by Evin Jaff, Ian Berke, and Caleb Martin</a> (the three
+          main students working on prototyping the device). The prototype was presented at multiple entrepreneurship
+          events, including TigerLaunch, and Washington University's Olin School of Business' Idea Bounce where it was a
+          finalist in both. The
           student startup disbanded, however, after Ian was awarded his Ph.D. in the Spring of 2019.</p>
 
         <h1>University of Washington School of Medicine, <em>Research Intern, Summer 2019</em></h1>
@@ -109,8 +177,12 @@
           <p>A photo of a sample similar to what I prepared in a recent publication from the lab</p>
         </div>
 
-        <p>While interning at the Stone Lab in the Medical School's Otolaryngology Department, I worked under a graduate student to prepare and analyze inner-ear samples. I learned standard lab skills, as well as complex protocols for how to properly
-          "defrost" biological samples stored for years in sub-zero freezers and the handling of dangerous chemicals such as Formaldehyde. While an intern, I also attended multiple research conferences and met with colleagues of the lab to learn more
+        <p>While interning at the Stone Lab in the Medical School's Otolaryngology Department, I worked under a graduate
+          student to prepare and analyze inner-ear samples. I learned standard lab skills, as well as complex protocols
+          for how to properly
+          "defrost" biological samples stored for years in sub-zero freezers and the handling of dangerous chemicals
+          such as Formaldehyde. While an intern, I also attended multiple research conferences and met with colleagues
+          of the lab to learn more
           about medical research </p>
       </div>
       <br><br>
