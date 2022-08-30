@@ -71,19 +71,18 @@
 
         <p>Currently interning for Garmin as a member of the Biosensor team at their main Olathe campus. The team is
           relatively new
-          and was formed as part of a new subdivision called Garmin Health. As an intern, worked under
-          the supervision of a mentor on exploratory signal analysis to see if blood pressure could be estimated using
-          the existing gen 5 sensor arrays found on most Garmin smartwatches. Current gen 5 sensors use
-          photoplethysmography to detect measurements like heart rate with green LEDs that emit light around
-          the 550 nm wavelength. Additionally, infrared lights also exist on the watch, but are infrequently used due to
+          and was formed as part of a new subdivision called Garmin Health. As an intern, I did two main things, research and simulator development. 
+          
+          Most of my work was on research, but I did help with writing a few patches in C/C++ for the hardware simulation of watches. My research was in optical detection of blood pressure. Garmin's current sensor arrays use
+          photoplethysmography to detect measurements like heart rate with 4 green LEDs that emit light around
+          the 550 nm wavelength. Additionally, 4 infrared lights exist on the same spots as the green LEDS, but are infrequently used due to
           the high
           power draw and only measure SPO2. For this project, we extracted signal readings from both green LED and infrared
           watches and built
-          a machine learning pipeline to study and analyze the signal. </p>
+          a machine learning pipeline in an attempt to predict blood pressure using signal data. </p>
 
-        <p>The optical signal shares some properties with a pressure waveform obtained from a blood pressure
-          cuff (the left diagram shows a waveform) but the optical measurement of an absorbance spectrum from firing green light at an artery
-          presents issues in reliability and is why blood pressure cuffs are how blood pressure is measured. </p>
+        <p>The optical signal shares some properties with an equivalent pressure waveform obtained from a blood pressure
+          cuff (the left diagram shows a waveform of a traditional blood pressure waveform) but the optical measurement presents issues in reliability and is why blood pressure cuffs are the gold standard. </p>
           
           <p>Notable competitors in the space such as Apple,
           Samsung, and Withings have had meddling success attempting a similar project, with only Samsung having mild
@@ -93,9 +92,7 @@
             pressure detection in the asian markets</a>, but not into the North American or
           European markets where regulations tend to be stricter.</p>
 
-        <p>Interns aren't meant to crack potentially million-dollar product features, but at this current moment, my
-          project has made some progress and I hope that some of my code could be ship in future Garmin
-          products.</p>
+        <p>By the end of the summer, we ultimately determined that optical estimation with Garmin's existing sensor arrays is not feasible. Over the summer I developed 3 separate pipelines with my mentor, and found moderate statistical correlation with proper signal processing. As Garmin starts to develop its next generation of sensor arrays, the hope would be that Garmin would include hardware similar to <a href="https://livemetric.net/">LiveMetric's FDA-Approved sensor array.</a> </p>
 
         <h1>Washington University School of Medicine, <em>Undergraduate Researcher, Summer 2021</em></h1>
 
@@ -106,8 +103,8 @@
 
         <p>Researcher at the Chen Lab at the Washington University School of Medicine studying sleep in lab mice. As an
           undergraduate researcher, I developed and maintained a tool to analyze and mice sleep to different states
-          (REM, NREM, etc). Using a barebone framework from a grad student at the lab, I added additional functionality
-          to the software. New features included a versioning system to track model changes and overtraining, giving the
+          (REM, NREM, etc). I added additional features and modules to a machine learning pipeline written by a graduate student.
+          New features included a system for versioning trained models to track overtraining, giving the
           model the ability to identify a new state called "quiet wakefullness" to better classify intermediate states
           of wakefullness, and the ability to dynamically click on a spectrogram and see detailed LFP, EMG, Delta, and
           Theta signals to closely analyze problem areas the model couldn't identify. In addition to maintaining these
@@ -121,8 +118,17 @@
         <h1>Washington University in St. Louis, <em>Teaching Assistant, Spring 2020-Present</em></h1>
 
         <p>
-          Teaching Assistant and grader for Washington University's Data Structures and Algorithms Course.
+          Since 2020, I have been a TA and Tutor for Wahington University in St. Louis. A breakdown of my positions starting from most recent is shown below
         </p>
+
+        <ul>
+          <li>TA for Washington University: </li>
+          <li>Head TA, CSE 237: Programming Tools and Techniques (Spring 2022)</li>
+          <li>Section Lead, CSE 247: Data Structures and Algorithms (Fall 2022)</li>
+          <li>Seminar TA, CSE 247R: Data Structures and Algorithms Seminar (Fall 2022)</li>
+          <li>TA, CSE 247: Data Structures and Algorithms (Spring 2021 - Fall 2022)</li>
+          <li>Tutor, CSE 131: Introduction to Computer Science (Fall 2020 - Spring 2021)</li>
+        </ul>
 
         <h1>Department of Defense: Project Tesseract, <em>Intern, Summer 2020</em></h1>
 
