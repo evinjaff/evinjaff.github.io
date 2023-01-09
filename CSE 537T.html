@@ -1,0 +1,1774 @@
+
+<!-- saved from url=(0080)#week9 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>CSE 537T: Trustworthy Autonomy</title>
+    <style type="text/css">
+        table {
+            border: none;
+            border-collapse: collapse;
+        }
+
+        table td {
+            border-left: 1px solid #000;
+        }
+
+        table tr {
+            vertical-align: top;
+        }
+
+        table td:first-child {
+            border-left: none;
+        }
+
+        table tr:first-child {
+            border-bottom: 1px solid #000;
+        }
+
+        table tr:first-child {
+            background: #EEE
+        }
+
+        table tr:nth-child(2) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(3) {
+            background: #FFF
+        }
+
+        table tr:nth-child(4) {
+            background: #EEF
+        }
+
+        table tr:nth-child(5) {
+            background: #FFF
+        }
+
+        table tr:nth-child(6) {
+            background: #EEF
+        }
+
+        table tr:nth-child(7) {
+            background: #FFF
+        }
+
+        table tr:nth-child(8) {
+            background: #EEF
+        }
+
+        table tr:nth-child(9) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(10) {
+            background: #FFF
+        }
+
+        table tr:nth-child(11) {
+            background: #EEF
+        }
+
+        table tr:nth-child(12) {
+            background: #FFF
+        }
+
+        table tr:nth-child(13) {
+            background: #EEF
+        }
+
+        table tr:nth-child(14) {
+            background: #FFF
+        }
+
+        table tr:nth-child(15) {
+            background: #EEF
+        }
+
+        table tr:nth-child(16) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(17) {
+            background: #FFF
+        }
+
+        table tr:nth-child(18) {
+            background: #EEF
+        }
+
+        table tr:nth-child(19) {
+            background: #FFF
+        }
+
+        table tr:nth-child(20) {
+            background: #EEF
+        }
+
+        table tr:nth-child(21) {
+            background: #FFF
+        }
+
+        table tr:nth-child(22) {
+            background: #EEF
+        }
+
+        table tr:nth-child(23) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(24) {
+            background: #FFF
+        }
+
+        table tr:nth-child(25) {
+            background: #EEF
+        }
+
+        table tr:nth-child(26) {
+            background: #FFF
+        }
+
+        table tr:nth-child(27) {
+            background: #EEF
+        }
+
+        table tr:nth-child(28) {
+            background: #FFF
+        }
+
+        table tr:nth-child(29) {
+            background: #EEF
+        }
+
+        table tr:nth-child(30) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(31) {
+            background: #FFF
+        }
+
+        table tr:nth-child(32) {
+            background: #EEF
+        }
+
+        table tr:nth-child(33) {
+            background: #FFF
+        }
+
+        table tr:nth-child(34) {
+            background: #EEF
+        }
+
+        table tr:nth-child(35) {
+            background: #FFF
+        }
+
+        table tr:nth-child(36) {
+            background: #EEF
+        }
+
+        table tr:nth-child(37) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(38) {
+            background: #FFF
+        }
+
+        table tr:nth-child(39) {
+            background: #EEF
+        }
+
+        table tr:nth-child(40) {
+            background: #FFF
+        }
+
+        table tr:nth-child(41) {
+            background: #EEF
+        }
+
+        table tr:nth-child(42) {
+            background: #FFF
+        }
+
+        table tr:nth-child(43) {
+            background: #EEF
+        }
+
+        table tr:nth-child(44) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(45) {
+            background: #FFF
+        }
+
+        table tr:nth-child(46) {
+            background: #EEF
+        }
+
+        table tr:nth-child(47) {
+            background: #FFF
+        }
+
+        table tr:nth-child(48) {
+            background: #EEF
+        }
+
+        table tr:nth-child(49) {
+            background: #FFF
+        }
+
+        table tr:nth-child(50) {
+            background: #EEF
+        }
+
+        table tr:nth-child(51) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(52) {
+            background: #FFF
+        }
+
+        table tr:nth-child(53) {
+            background: #EEF
+        }
+
+        table tr:nth-child(54) {
+            background: #FFF
+        }
+
+        table tr:nth-child(55) {
+            background: #EEF
+        }
+
+        table tr:nth-child(56) {
+            background: #FFF
+        }
+
+        table tr:nth-child(57) {
+            background: #EEF
+        }
+
+        table tr:nth-child(58) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(59) {
+            background: #FFF
+        }
+
+        table tr:nth-child(60) {
+            background: #EEF
+        }
+
+        table tr:nth-child(61) {
+            background: #FFF
+        }
+
+        table tr:nth-child(62) {
+            background: #EEF
+        }
+
+        table tr:nth-child(63) {
+            background: #FFF
+        }
+
+        table tr:nth-child(64) {
+            background: #EEF
+        }
+
+        table tr:nth-child(65) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(66) {
+            background: #FFF
+        }
+
+        table tr:nth-child(67) {
+            background: #EEF
+        }
+
+        table tr:nth-child(68) {
+            background: #FFF
+        }
+
+        table tr:nth-child(69) {
+            background: #EEF
+        }
+
+        table tr:nth-child(70) {
+            background: #FFF
+        }
+
+        table tr:nth-child(71) {
+            background: #EEF
+        }
+
+        table tr:nth-child(72) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(73) {
+            background: #FFF
+        }
+
+        table tr:nth-child(74) {
+            background: #EEF
+        }
+
+        table tr:nth-child(75) {
+            background: #FFF
+        }
+
+        table tr:nth-child(76) {
+            background: #EEF
+        }
+
+        table tr:nth-child(77) {
+            background: #FFF
+        }
+
+        table tr:nth-child(78) {
+            background: #EEF
+        }
+
+        table tr:nth-child(79) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(80) {
+            background: #FFF
+        }
+
+        table tr:nth-child(81) {
+            background: #EEF
+        }
+
+        table tr:nth-child(82) {
+            background: #FFF
+        }
+
+        table tr:nth-child(83) {
+            background: #EEF
+        }
+
+        table tr:nth-child(84) {
+            background: #FFF
+        }
+
+        table tr:nth-child(85) {
+            background: #EEF
+        }
+
+        table tr:nth-child(86) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(87) {
+            background: #FFF
+        }
+
+        table tr:nth-child(88) {
+            background: #EEF
+        }
+
+        table tr:nth-child(89) {
+            background: #FFF
+        }
+
+        table tr:nth-child(90) {
+            background: #EEF
+        }
+
+        table tr:nth-child(91) {
+            background: #FFF
+        }
+
+        table tr:nth-child(92) {
+            background: #EEF
+        }
+
+        table tr:nth-child(93) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(94) {
+            background: #FFF
+        }
+
+        table tr:nth-child(95) {
+            background: #EEF
+        }
+
+        table tr:nth-child(96) {
+            background: #FFF
+        }
+
+        table tr:nth-child(97) {
+            background: #EEF
+        }
+
+        table tr:nth-child(98) {
+            background: #FFF
+        }
+
+        table tr:nth-child(99) {
+            background: #EEF
+        }
+
+        table tr:nth-child(100) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(101) {
+            background: #FFF
+        }
+
+        table tr:nth-child(102) {
+            background: #EEF
+        }
+
+        table tr:nth-child(103) {
+            background: #FFF
+        }
+
+        table tr:nth-child(104) {
+            background: #EEF
+        }
+
+        table tr:nth-child(105) {
+            background: #FFF
+        }
+
+        table tr:nth-child(106) {
+            background: #EEF
+        }
+
+        table tr:nth-child(107) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(108) {
+            background: #FFF
+        }
+
+        table tr:nth-child(109) {
+            background: #EEF
+        }
+
+        table tr:nth-child(110) {
+            background: #FFF
+        }
+
+        table tr:nth-child(111) {
+            background: #EEF
+        }
+
+        table tr:nth-child(112) {
+            background: #FFF
+        }
+
+        table tr:nth-child(113) {
+            background: #EEF
+        }
+
+        table tr:nth-child(114) {
+            background: #EEF;
+            border-top: 5px solid black
+        }
+
+        table tr:nth-child(115) {
+            background: #FFF
+        }
+
+        table tr:nth-child(116) {
+            background: #EEF
+        }
+
+        table tr:nth-child(117) {
+            background: #FFF
+        }
+
+        table tr:nth-child(118) {
+            background: #EEF
+        }
+
+        table tr:nth-child(119) {
+            background: #FFF
+        }
+
+        table tr:nth-child(120) {
+            background: #EEF
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1><img alt="CSE 537T: Trustworthy Autonomy" height="172" src="./CSE 537T_ Trustworthy Autonomy_files/logo.png" width="172" align="middle">CSE 537T: Spring 2023
+    </h1>
+    <ul>
+        <li><a href="https://wustl.instructure.com/courses/1234">Canvas</a></li>
+        <li><a href="https://piazza.com/wustl/spring2023/cse537t">Piazza</a></li>
+        <li><a href="https://wustl.instructure.com/courses/1234/office-hours">Office Hours</a></li>
+
+
+    </ul>
+    <p>jump to:<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#week0">Jan 16-Jan 20</a>, <a href="#week1">Jan 23-Jan 27</a>, <a href="#week2">Jan 30-Feb 3</a>, <a href="#week3">Feb 6-Feb 10</a>, <a href="#week4">Feb 13-Feb 17</a>, <a href="#week5">Feb 20-Feb 24</a><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#week6">Feb 27-Mar 3</a>,&nbsp;<a href="#week7">Mar 6-Mar 10</a>,&nbsp;</p><p><a href="#week8">Mar 13-Mar 17</a>, (Spring Break)</p><p><a href="#week9">Mar 20-Mar 24</a>, <a href="#week10">Mar 27-Mar 31</a>, <a href="#week11">Apr 3-Apr 7</a>,&nbsp;<a href="#week12">Apr 10-Apr 14</a>,&nbsp;<a href="#week13">Apr 17-Apr 21</a>, <a href="#week14">Apr 23-Apr 28</a></p>
+    <table style="width: 100%">
+    </table>
+    <table style="width: 100%">
+        <tbody>
+            <tr valign="top">
+                <td style="width: 100px">Date/Subject</td>
+                <td style="width: 200px">Prep</td>
+                <td style="width: 100px">In Class</td>
+                <td style="width: 100px">Assignments</td>
+            </tr>
+            <tr id="week0">
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Tue Jan 17 (#0) <strong>Introduction</strong></td>
+                <td><br></td>
+                <td>slides: <a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Thu Jan 19 (#1) <strong>Modeling Computation</strong></td>
+                <td><a href="https://www.youtube.com/playlist?list=PL_N6OURklgHxEUGmygt9IC87b2yfHJANJ">pre-lecture notes</a><br><br><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td>&gt;&gt;&gt; Assign <a href="https://classes.engineering.wustl.edu/cse231/core/index.php?title=Half_And_Half_Nucleobase_Count_Assignment">HW1</a><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr id="week1">
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Tue Jan 24 (#2) <strong>Proofs of inductive invariance properties</strong></td><td><a href="https://www.youtube.com/playlist?list=PL_N6OURklgHxEUGmygt9IC87b2yfHJANJ">pre-lecture notes</a></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Thu Jan 26 (#3) <strong>DPLL Algorithm, symbolic reachability</strong></td>
+                <td><br><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Sat Jan 28</td>
+                <td></td>
+                <td></td>
+                <td><br></td>
+            </tr>
+            <tr id="week2">
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Tue Jan 31 (#4) <strong>Satisfiability Modulo Theory</strong></td>
+                <td><br><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Thu Feb 2 (#5) <strong>SMT, Linear Real Arithmetic and Simplex</strong></td>
+                <td><br><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Sat Feb 4</td>
+                <td></td>
+                <td></td>
+                <td><strong>&lt;&lt;&lt; Submit&nbsp;<a href="https://classes.engineering.wustl.edu/cse231/core/index.php?title=Race_Condition_Translation_Assignment">HW 1</a></strong><br></td>
+            </tr>
+            <tr id="week3">
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Tue Feb 7 (#6)<br><strong>Verifying Neural Networks, Reluplex</strong></td>
+                <td><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Thu Feb 9 (#7) <strong>Modeling physics, dynamical systems</strong></td>
+                <td><a href="https://www.youtube.com/playlist?list=PL_N6OURklgHxEUGmygt9IC87b2yfHJANJ">pre-lecture notes</a><br><br>
+                </td>
+                <td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Sat Feb 11</td>
+                <td></td>
+                <td></td>
+                <td><br></td>
+            </tr>
+            <tr id="week4">
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Tue Feb 14 (#8) <strong>Project planning discussion</strong></td>
+                <td><br><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Thu Feb 16 (#9) <strong>Mid Semester Project Pitch Pt. 1</strong></td>
+                <td><br><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td>&gt;&gt;&gt; Assign&nbsp;<a href="https://classes.engineering.wustl.edu/cse231/core/index.php?title=Half_And_Half_Nucleobase_Count_Assignment">HW 2</a></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Sat Oct 1</td>
+                <td></td>
+                <td></td>
+                <td><br></td>
+            </tr>
+            <tr id="week5">
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Tue Feb 21 (#10)&nbsp;<strong>Mid Semester Project Pitch Pt. 2</strong></td>
+                <td><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Thu Feb 23 (#11) <strong>Dynamical systems stability</strong></td>
+                <td><a href="https://www.youtube.com/playlist?list=PL_N6OURklgHxEUGmygt9IC87b2yfHJANJ">pre-lecture notes</a>
+                </td>
+                <td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Sat Oct 8</td>
+                <td></td>
+                <td></td>
+                <td><br></td>
+            </tr>
+            <tr id="week6">
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Tue Feb 28&nbsp;<strong>Modeling cyberphysical systems, Hybrid automata, executions</strong></td>
+                <td></td>
+                <td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Thu Mar 2 (#12) <strong>MCPS Invariants, Floyd-Hoare logic</strong></td>
+                <td><br></td>
+                <td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td>&gt;&gt;&gt; Assign&nbsp;<a href="https://classes.engineering.wustl.edu/cse231/core/index.php?title=Half_And_Half_Nucleobase_Count_Assignment">HW 3</a></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Sat Mar 4</td>
+                <td></td>
+                <td></td>
+                <td><strong>&lt;&lt;&lt; Submit&nbsp;<a href="https://classes.engineering.wustl.edu/cse231/core/index.php?title=Race_Condition_Translation_Assignment">HW 2</a></strong></td>
+            </tr>
+            <tr id="week7">
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Tue Mar 7 (#13) <strong>Requirements, temporal logics, CTL model checking</strong></td>
+                <td><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Thu Mar 9 (#14) <strong>Reachability analysis : integral timed automata (ITA)</strong></td>
+                <td><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Sat Oct 22</td>
+                <td></td>
+                <td></td><td><br></td>
+            </tr>
+            <tr id="week8">
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Tue Mar 14 (#15) <strong>No Class</strong></td>
+                <td><br><br></td>
+                <td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Thu Mar 16 (#16) <strong>No Class</strong></td>
+                <td><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Sat Oct 29</td>
+                <td></td>
+                <td></td>
+                <td><strong>&lt;&lt;&lt; Submit&nbsp;<a href="https://classes.engineering.wustl.edu/cse231/core/index.php?title=Race_Condition_Translation_Assignment">HW 3</a></strong></td>
+            </tr>
+            <tr id="week9">
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Tue Mar 21 (#17) <b>Abstractions</b></td>
+                <td><a href="https://www.youtube.com/playlist?list=PL_N6OURklgHxEUGmygt9IC87b2yfHJANJ">pre-lecture notes</a></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Thu Mar 23 (#18) <br><strong>Abstractions (continued)<br></strong></td>
+                <td><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td>&gt;&gt;&gt; Assign&nbsp;<a href="https://classes.engineering.wustl.edu/cse231/core/index.php?title=Half_And_Half_Nucleobase_Count_Assignment">HW 4</a></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Sat Mar 25</td>
+                <td></td>
+                <td></td>
+                <td><br></td>
+            </tr>
+            <tr id="week10">
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Tue Mar 28 (#19) <strong>Project review</strong></td>
+                <td><br><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Thu Mar 30 (#20)&nbsp;<strong>Theory of computation, Turing Machines, decidability, reductions Undeniable problems for hybrid automata</strong></td>
+                <td><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Sat Apr 1</td>
+                <td></td>
+                <td></td>
+                <td><br></td>
+            </tr>
+            <tr id="week11">
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Tue Apr 4 (#21) <strong>Initialized Rectangular Hybrid Automata, Reachability in practice</strong></td>
+                <td><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Thu Apr 6 (#22) <strong>Composition and compatibility of automata, reactivity, input enabled</strong></td>
+                <td><br></td>
+                <td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td>&gt;&gt;&gt; Assign&nbsp;<a href="https://classes.engineering.wustl.edu/cse231/core/index.php?title=Half_And_Half_Nucleobase_Count_Assignment">HW 5</a></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Sat Apr 8</td>
+                <td></td>
+                <td></td>
+                <td><strong>&lt;&lt;&lt; Submit&nbsp;<a href="https://classes.engineering.wustl.edu/cse231/core/index.php?title=Race_Condition_Translation_Assignment">HW 4</a></strong></td>
+            </tr>
+            <tr id="week12">
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Tue Apr 11 (#23) <strong>Progress verification; stability of hybrid systems,&nbsp;</strong></td><td><a href="https://www.youtube.com/playlist?list=PL_N6OURklgHxEUGmygt9IC87b2yfHJANJ">pre-lecture notes</a></td>
+                <td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Thu Apr 13&nbsp;<strong>Data-driven verification of nonlinear systems</strong></td>
+                <td></td>
+                <td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Sat Apr 15</td>
+                <td></td>
+                <td></td>
+                <td><br></td>
+            </tr>
+            <tr id="week13">
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Tue Apr 18 (#24) <strong>Project Feedback, group discussion</strong></td>
+                <td><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Thu Apr 20 (#25) <strong>Practice Presentations</strong></td>
+                <td><br></td><td>slides:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">PDF</a><br>recording:&nbsp;<a href="https://docs.google.com/presentation/d/18uLYhiLNpdPecVU0Xy5FJmdj0nTd212d5qm0-al5aQE/pub">Box</a>
+                </td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Sat Apr 22</td>
+                <td></td>
+                <td></td>
+                <td><strong>&lt;&lt;&lt; Submit&nbsp;<a href="https://classes.engineering.wustl.edu/cse231/core/index.php?title=Race_Condition_Translation_Assignment">HW 5</a></strong></td>
+            </tr>
+            <tr id="week14">
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Tue Apr 25 (#26) <strong>Final Presentations</strong></td>
+                <td><br></td><td><br></td>
+                <td><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Thu Apr 27 (#27) <strong>Final Presentations (continued)</strong></td>
+                <td><br></td><td><br></td>
+                <td><br><br></td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Sat Apr 29</td>
+                <td></td>
+                <td></td>
+                <td><br></td>
+            </tr>
+            <tr id="week15">
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>Sat May 4</td>
+                <td></td>
+                <td></td>
+                <td><br></td>
+            </tr>
+        </tbody>
+    </table><br>
+
+
+
+
+
+
+<div>Credit to Professor Dennis Cosgrove for Website Design</div></body></html>
