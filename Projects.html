@@ -204,15 +204,10 @@
         <p>For my final project for CSE 204A (Frontend Web Development), we had to build a frontend-only website or
           application using a RESTful API. Out of a need, I decided to build a
           pokedex tracker using the PokeAPI because it's been my goal for a few summers to finish the National
-          Pokedex in Pokemon Soul Silver! With this tool, I can track my
-          progress as I finally complete my National Dex this Summer. Oh, and one more fun feature, the application
-          tracks your completion percentage, and has a share button
-          that composes a tweet for you that tells everyone how far you are in your progress to "catch 'em all!"</p>
+          Pokedex in Gen 4. The site lets you track your
+          progress and has a share button that composes a tweet that tells everyone how far you are in your progress to "catch 'em all!"</p>
 
-        <p>On the website, you can check off caught pokemon and hover over a pokemon to see how you can catch/evolve
-          it. The
-          app also tracks your progress with a JSON file, so the application is technically portable in the sense that
-          if you hold on to the exported JSON, you can keep your progress saved. This site is similar
+        <p>This site is similar
           in a lot of ways to my Fire Emblem Echos Randomizer I built, but I've come
           at it with 1-2 years of wisdom. For example, I used TypeScript instead of vanilla JS with a target
           transpilation of ECMAScript 6 for maintainability. After one project, I'm a TypeScript convert; it is such a
@@ -221,32 +216,24 @@
           will
           make the
           site run slower but de-bloats the code and makes it more dynamic. Lastly, instead
-          of building a monolithic block of JavaScript code like with the Fire Emblem Echoes Randomizer, I used a
-          "clean code" style such that many smaller methods were used when possible.</p>
+          of building a monolithic block of JavaScript code, I used a
+          "clean code" style that utilizes smaller methods rather than a spaghetti main loop.</p>
         <p>
           Unfortunately, I still made some mistakes. I lost 10 points on the project because my
           website made about 2,400 AJAX requests, which divided by the 493 pokemon means about 4.83 AJAX requests per
           pokemon. Which makes sense considering that sprites, encounter, and evolution data each needed to be
           obtained in
-          separate requests. I probably should have made the AJAX data for encounters happen upon request, but I still
-          would have needed at minimum 493 AJAX requests and 4 megabytes of data to load the website, and it would
-          have only saved me around 4-5 megabytes of data but admittedly 1600 less AJAX requests that could be
-          performed after the site loaded.</p>
+          separate requests. I probably should have made some of the requests "lazy load", but I calculated that the site
+          would still need at least ~600 AJAX requests to lazy load the elements and 4 megabytes of data.</p>
 
-        <p>Ultimately, a project like this shows the pitfalls of deploying without servers and really the whole Web
-          2.0 no-backend
-          idea that leaves us with heavy JS websites that perform poorly. It's fun to use APIs, link stuff together,
-          and not have to pay AWS, but you get projects like these. If I had used
-          Django for this project and
-          stored the query in a SQLite database that updated its records from the PokeAPI every month, I could use an
-          HTML template to render HTML views on the server-side and provide a lighter front-end experience. This would
-          have been much more efficient, especially for an arguably
-          static and small dataset like Pokemon.
+        <p> The flaws could be fixed by introducing server-side rendering, but was out of scope for the class project;
+          my professor was even a little wary of me using TypeScript because "you're not writing your site in JavaScript."
+          Maybe a revisit of this project that lets you upload an actual save file and it automatically tracks and builds a completion plan could be a fun project for the future.
         </p>
 
-        <p>The site can be found <a href="https://wustlcse204.github.io/10-final-project-individual-evinjaff/">here</a>,
-          and the final
-          codebase will be released pending approval from Professor Clapp.</p>
+
+        <p>The site can be found <a href="https://evinjaff.github.io/pokedex-tracker/">here</a>,
+          and the final code can be found <a href="https://github.com/evinjaff/pokedex-tracker">here</a>.</p>
         <br>
 
         <h1><a name="IndependentStudy"></a>Strategy Algorithm Independent Study, <em>Spring 2021</em></h1>
@@ -302,14 +289,13 @@
           <p>
             The app was written using a diverse stack of languages and frameworks. The frontend was built using
             Vue.js,
-            and the page was compiled in Electronjs to build the website to a dedicated desktop binary. The backend of
+            and the page was compiled in <a href="https://www.electronjs.org/">Electron</a> to build the website to a dedicated desktop binary. The backend of
             the
             application uses PHP and MongoDB to manage the data, and the frontend uses AJAX requests to get data from
             the
-            frontend. As an aside, I love MongoDB. It is a beautiful way to run a
-            database. Though setting up the MongoDB PHP client with composer was annoying. Our application has been
+            frontend. Our application has been
             tested for
-            basic web security and is reasonably safe from SQL/Database Injection, XSS, CRSF forgery, and other
+            basic web security and is reasonably safe from SQL/Database Injection, XSS, CSRF forgery, and other
             well-known
             penetration methods.
           </p>
